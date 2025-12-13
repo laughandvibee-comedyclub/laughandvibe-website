@@ -10,10 +10,14 @@
 </head>
 
 <body class="text-[#FFEFEF] font-poppins scroll-smooth">
+    <!-- header -->
     <header class="max-w-[1600px] mx-auto bg-black py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-screen">
+        <!-- header-main-flex container -->
         <div class=" flex flex-col items-center lg:flex-row justify-between">
+            <!-- input -->
             <input class="hidden peer" type="checkbox" name="menu-checkbox" id="menu-checkbox"
                 area-labelledby="hamburger-icon close-icon">
+            <!-- logo -->
             <div class="flex items-center w-full lg:w-fit ">
                 <a href="#" class="flex items-center lg:w-fit max-lg:py-1">
                     <img src="../images/logo.png" alt="laugh-and-vibe-logo" class="size-14">
@@ -21,6 +25,7 @@
                 </a>
             </div>
 
+            <!-- labels for input -->
             <label id="hamburger-icon"
                 class="peer-checked:hidden absolute top-4 right-3 transition-all duration-300 ease-in-out lg:hidden"
                 for="menu-checkbox">
@@ -40,6 +45,7 @@
                 </svg>
             </label>
 
+            <!-- nav links -->
             <nav
                 class="flex flex-col w-full lg:w-fit divide-y divide-gray-600 lg:divide-y-0 lg:flex-row space-x-2.5 xl:space-x-4 2xl:space-x-8 text-xs xl:text-sm 2xl:text-base flex-wrap max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[600px] transition-all duration-300 ease-in-out">
                 <div class="w-full lg:w-fit py-4 text-center max-lg:border-t border-gray-600">
@@ -71,6 +77,7 @@
                 </div>
             </nav>
 
+            <!-- book tickets button -->
             <div
                 class="max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[100px] max-lg:peer-checked:my-6 transition-all duration-300 ease-in-out rounded">
                 <a href="http://"
@@ -81,9 +88,12 @@
         </div>
     </header>
 
+    <!-- main -->
     <main class="max-w-[1600px] mx-auto">
+        <!-- hero-section -->
         <section id="hero-section"
             class="h-[calc(100vh-160px)] md:h-[calc(100vh-176px)] lg:h-[calc(100vh-200px)] bg-linear-to-b from-[#26172F] via-32% via-[#331C28] via-53% via-[#3E1E2A] to-[#140F18] to-100% px-1 md:px-3 lg:px-17">
+            <!-- hero-section main-flex-container -->
             <div class="flex flex-col h-full justify-center items-center">
                 <div class="max-xm:max-w-2xs max-w-3xl">
                     <img class="w-full" src="../images/laughter-meets-performance.png"
@@ -93,6 +103,7 @@
                     A single stage for both pure fun and professional engagement. Experience live comedy, music, and
                     corporate entertainment — all under one spotlight.
                 </p>
+                <!-- sub-flex container of buttons -->
                 <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
                     <button class="bg-[#EFCB00] px-10 py-2.5 rounded font-medium text-[#000000] max-md:text-xs"
                         type="button">Book Weekend Show</button>
@@ -102,28 +113,35 @@
             </div>
         </section>
 
+        <!-- highlights section -->
         <section id="highlights" class="bg-[#3A3A3A] px-1 md:px-3 lg:px-17">
+            <!-- highlights-main-flex container -->
             <div
                 class="flex max-sm:flex-col max-sm:justify-center max-sm:space-y-1 items-center md:gap-8 min-h-24 text-[#FFFFFF] max-lg:text-xs text-sm">
+                <!-- flex-item-1 -->
                 <div class="flex items-center space-x-2">
                     <img class="w-2 h-2" src="../images/circle-1.png" alt="bullet-point-circle-1-img">
                     <p>50-seater studio in Koregaon Park</p>
                 </div>
+                <!-- flex-item-2 -->
                 <div class="flex items-center space-x-2">
                     <img class="w-2 h-2" src="../images/circle-2.png" alt="bullet-point-circle-2-img">
                     <p>Corporate-ready clean comedy</p>
                 </div>
+                <!-- flex-item-3 -->
                 <div class="flex items-center space-x-2">
                     <img class="w-2 h-2" src="../images/circle-3.png" alt="bullet-point-circle-3-img">
                     <p>Artist network: comics, hosts, bands</p>
                 </div>
+                <!-- flex-item-4 - location -->
                 <p class="md:ml-auto md:mr-0 text-[#928E8E]">Pune • Mumbai • Remote / Virtual Shows</p>
             </div>
         </section>
 
+        <!-- what we bring to the stage section -->
         <section id="what-we-bring"
             class="bg-linear-to-b from-[#000000] via-51% via-[#3B3A3A] via-53% to-[#000000] to-100% px-1 md:px-3 lg:px-17">
-            <div class="flex flex-col justify-center items-center py-30">
+            <div class="flex flex-col justify-center items-center py-20">
                 <h2 class="text-xl md:text-2xl lg:text-3xl text-white font-bold">What We Bring To The Stage</h2>
                 <p class="text-white font-medium max-w-5xl text-center my-9 max-sm:text-sm">
                     Laugh & Vibe connects talent and companies through powerful, engaging entertainment. From stand-up
@@ -133,20 +151,98 @@
                 <!-- flex container of cards -->
                 <div class="text-[#A2A2A2] flex max-lg:flex-col max-lg:space-y-8 lg:space-x-10">
                     <!-- card-1 -->
-                    <div class="max-w-[360px] px-4 py-8 inset-shadow-[3px_4px_4px_#00000040] shadow-[4px_4px_5.4px_#726F6F80] bg-linear-to-r from-[#550606] to-[#00000080] rounded-xl">
+                    <div
+                        class="max-w-[360px] px-4 py-8 inset-shadow-[3px_4px_4px_#00000040] shadow-[4px_4px_5.4px_#726F6F80] bg-linear-to-r from-[#550606] to-[#00000080] rounded-xl">
                         <h3 class="font-semibold p-1 text-[#FF0000]">Live Shows</h3>
-                        <p class="text-xs font-medium p-1">Comedy, music, and poetry events that turn nights into memories.</p>
+                        <p class="text-xs font-medium p-1">Comedy, music, and poetry events that turn nights into
+                            memories.</p>
                     </div>
                     <!-- card-2 -->
-                    <div class="max-w-[360px] px-4 py-8 inset-shadow-[3px_4px_4px_#00000040] shadow-[4px_4px_5.4px_#726F6F80] bg-linear-to-r from-[#380655] to-[#00000080] rounded-xl">
-                        <h3 class="font-semibold p-1 text-[#9B5BD7]">Corporate EventsLive Shows</h3>
-                        <p class="text-xs font-medium p-1">Tailored laughter therapy and professional hosting for company offsites.</p>
+                    <div
+                        class="max-w-[360px] px-4 py-8 inset-shadow-[3px_4px_4px_#00000040] shadow-[4px_4px_5.4px_#726F6F80] bg-linear-to-r from-[#380655] to-[#00000080] rounded-xl">
+                        <h3 class="font-semibold p-1 text-[#9B5BD7]">Corporate Events</h3>
+                        <p class="text-xs font-medium p-1">Tailored laughter therapy and professional hosting for
+                            company offsites.</p>
                     </div>
                     <!-- card-3 -->
-                    <div class="max-w-[360px] px-4 py-8 inset-shadow-[3px_4px_4px_#00000040] shadow-[4px_4px_5.4px_#726F6F80] bg-linear-to-r from-[#554909] to-[#00000080] rounded-xl">
+                    <div
+                        class="max-w-[360px] px-4 py-8 inset-shadow-[3px_4px_4px_#00000040] shadow-[4px_4px_5.4px_#726F6F80] bg-linear-to-r from-[#554909] to-[#00000080] rounded-xl">
                         <h3 class="font-semibold p-1 text-[#FFC310]">Artist Platform</h3>
-                        <p class="text-xs font-medium p-1">A thriving ecosystem helping artists grow through exposure and partnerships.</p>
+                        <p class="text-xs font-medium p-1">A thriving ecosystem helping artists grow through exposure
+                            and partnerships.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- inside the room section -->
+        <section id="inside-the-room"
+            class="bg-conic-139 from-[#1D0E01] from-11% via-[#3B0726] via-23% via-[#310C3C] via-40% via-[#000000] via-53% to-[#3B0726] to-81% px-1 md:px-3 lg:px-17">
+            <div class="flex flex-col justify-center items-center pt-14 pb-16">
+                <h2 class="text-xl md:text-2xl lg:text-3xl text-[#E3E3E3] font-bold">Inside The Room</h2>
+                <p class="text-[#D3D3D3] font-medium max-w-5xl text-center my-9 max-sm:text-sm">
+                    Snapshots from our laughter-filled nights, music gigs, and corporate shows. Every picture holds a
+                    story.
+                </p>
+                <!-- grid main-container of group and artist pics -->
+                <div class="grid gap-2 place-items-stretch md:grid-cols-5">
+                    <!-- group-pic-1 -->
+                    <img class="md:col-span-3 rounded" src="../images/inside-the-room-img-1.png" alt="group-pic-1">
+
+                    <!-- grid sub-container-1 of artist pics -->
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2 max-md:order-last place-items-stretch md:col-span-2">
+                        <!-- artist-pic-2 -->
+                        <img class="rounded" src="../images/inside-the-room-img-2.png" alt="artist-pic-2">
+                        <!-- artist-pic-3 -->
+                        <img class="row-span-2 rounded" src="../images/inside-the-room-img-3.png" alt="artist-pic-3">
+                        <!-- artist-pic-4 -->
+                        <img class="rounded" src="../images/inside-the-room-img-4.png" alt="artist-pic-4">
+                    </div>
+
+                    <!-- grid sub-container-2 of artist pics -->
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2 place-items-stretch md:col-span-2">
+                        <!-- artist-pic-5 -->
+                        <img class="rounded" src="../images/inside-the-room-img-5.png" alt="artist-pic-5">
+                        <!-- artist-pic-6 -->
+                        <img class="rounded" src="../images/inside-the-room-img-6.png" alt="artist-pic-6">
+                        <!-- artist-pic-7 -->
+                        <img class="rounded" src="../images/inside-the-room-img-7.png" alt="artist-pic-7">
+                        <!-- artist-pic-8 -->
+                        <img class="rounded" src="../images/inside-the-room-img-8.png" alt="artist-pic-8">
+                    </div>
+
+                    <!-- group-pic-9 -->
+                    <img class="md:col-span-3 rounded" src="../images/inside-the-room-img-9.png" alt="group-pic-9">
+                </div>
+        </section>
+
+        <!-- brands that trusted us section -->
+        <section id="brands-that-trusted-us"
+            class="bg-linear-to-bl from-[#32091B] to-[#000000] to-100% px-1 md:px-3 lg:px-17">
+            <!-- main-flex container -->
+            <div class="flex flex-col sm:flex-row justify-around items-center py-16">
+                <h2 class="text-xl sm:text-2xl lg:text-3xl text-[#FFFFFF] font-semibold sm:max-w-52 max-sm:pb-10">Brands
+                    That Trusted Us</h2>
+                <!-- flex-container for brand-images -->
+                <div
+                    class="flex grow justify-center items-center gap-2 sm:gap-6 lg:gap-10 xl:gap-14 flex-wrap min-[640px]:max-w-[500px] min-[800px]:max-w-[550px] min-[1100px]:max-w-3xl min-[1400px]:max-w-5xl">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16 min-[1100px]:ml-10 min-[1400px]:ml-8"
+                        src="../images/brand-1-google.png" alt="brand-1-google-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-2-capgemini.png"
+                        alt="brand-2-capgemini-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-3-accenture.png"
+                        alt="brand-3-accenture-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-4-infosys.png"
+                        alt="brand-4-infosys-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-5-tcs.png" alt="brand-5-tcs-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-6-wipro.png" alt="brand-6-wipro-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-7-facebook.png"
+                        alt="brand-7-facebook-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-8-deloite.png"
+                        alt="brand-8-deloite-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-9-fedex.png" alt="brand-9-fedex-img">
+                    <img class="w-40 h-10 lg:w-52 lg:h-16" src="../images/brand-10-amazon.png"
+                        alt="brand-10-amazon-img">
                 </div>
             </div>
         </section>
