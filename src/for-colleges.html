@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laugh and Vibe</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Alpine.js from CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="text-[#FFEFEF] font-poppins scroll-smooth">
+    <!-- header -->
+    <header class="max-w-[1600px] mx-auto bg-black py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full">
+        <!-- header-main-flex container -->
+        <div class=" flex flex-col items-center lg:flex-row justify-between">
+            <!-- input -->
+            <input class="hidden peer" type="checkbox" name="menu-checkbox" id="menu-checkbox"
+                area-labelledby="hamburger-icon close-icon">
+            <!-- logo -->
+            <div class="flex items-center w-full lg:w-fit ">
+                <a href="../index.html#" class="flex items-center lg:w-fit max-lg:py-1">
+                    <img src="../assets/images/home/logo.png" alt="laugh-and-vibe-logo" class="size-14">
+                    <span class="hidden md:block pl-4 text-xs lg:text-sm xl:text-base 2xl:text-xl">Laugh and Vibe</span>
+                </a>
+            </div>
+
+            <!-- labels for input -->
+            <label id="hamburger-icon"
+                class="peer-checked:hidden absolute top-4 right-3 transition-all duration-300 ease-in-out lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+            </label>
+            <label id="close-icon"
+                class="hidden peer-checked:block absolute top-4 right-3 transition-all duration-300 ease-in-out lg:peer-checked:hidden lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www .w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                </svg>
+            </label>
+
+            <!-- nav links -->
+            <nav
+                class="flex flex-col w-full lg:w-fit divide-y divide-gray-600 lg:divide-y-0 lg:flex-row space-x-2.5 xl:space-x-4 2xl:space-x-8 text-xs xl:text-sm 2xl:text-base flex-wrap max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[600px] transition-all duration-300 ease-in-out">
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-t border-gray-600">
+                    <a class="" href="../index.html#">Home</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./about.html">About</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#our-services-section">Service</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./shows.html">Shows</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./for-corporates.html">For Corporates</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./artists.html">Artists</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#inside-the-room">Gallery</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./studio-rental.html">Studio Rental</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-b border-gray-600">
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+
+            <!-- book tickets button -->
+            <div
+                class="max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[100px] max-lg:peer-checked:my-6 transition-all duration-300 ease-in-out rounded">
+                <a href="https://linktr.ee/laughandvibe" target="_blank"
+                    class="flex justify-center p-3 bg-linear-to-r from-[#9049D3] via-28% via-[#CE5573] via-65% via-[#F35D23] to-[#FFC310] to-100% text-black text-xs lg:text-sm xl:text-base 2xl:text-xl text-center rounded-xl lg:my-0">
+                    Book Tickets
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="max-w-[1600px] mx-auto w-full">
+        <!-- for-corporates-hero-section -->
+        <section id="for-colleges-hero-section"
+            class="bg-linear-to-bl from-[#000000] to-[#7D27CE] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center space-y-12 py-16">
+                <!-- c-t-a- container -->
+                <div class="flex flex-col justify-center items-center">
+                    <!-- highlight-tab sub-flex container  -->
+                    <div
+                        class="flex gap-2 bg-[#3B3A3A66] text-center text-[#B39A09] font-medium p-1.5 my-8 rounded-xl inset-shadow-[3.49px_4.66px_4.66px_#716F6F40] shadow-[4.66px_4.66px_6.29px_#716F6F80]">
+                        <!-- svg -->
+                        <svg width="19" height="17" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.9167 22.5L4.33333 17.75V10.25L0 7.5L11.9167 0L23.8333 7.5V17.5H21.6667V8.875L19.5 10.25V17.75L11.9167 22.5ZM11.9167 12.125L19.3375 7.5L11.9167 2.875L4.49583 7.5L11.9167 12.125ZM11.9167 19.6562L17.3333 16.2812V11.5625L11.9167 15L6.5 11.5625V16.2812L11.9167 19.6562Z"
+                                fill="#B39A09" />
+                        </svg>
+                        <p class="uppercase text-sm">For Colleges • Fests • Freshers</p>
+                    </div>
+                    <h1 class="text-2xl text-[#E4E4E4] font-bold text-center lg:text-4xl lg:leading-14">
+                        High-Energy Comedy
+                        <br class="hidden lg:block">
+                        For College Fests & Freshers.
+                    </h1>
+                    <p class="max-w-3xl font-light py-8 text-center text-[#DEDBDB]">
+                        Clean, campus-friendly stand-up, crowd work, and hosting for freshers' parties, cultural fests,
+                        farewells, and department events. We handle the humour, you enjoy the chaos.
+                    </p>
+                    <!-- highlights-main-flex container -->
+                    <div class="flex flex-col space-y-1 text-xs sm:flex-row sm:space-x-6 text-[#CDCDCD] py-6">
+                        <!-- flex-item-1 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="9" height="9" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 13.3333V11C0 10.5278 0.121528 10.0937 0.364583 9.69792C0.607639 9.30208 0.930556 9 1.33333 8.79167C2.19444 8.36111 3.06944 8.03819 3.95833 7.82292C4.84722 7.60764 5.75 7.5 6.66667 7.5C7.58333 7.5 8.48611 7.60764 9.375 7.82292C10.2639 8.03819 11.1389 8.36111 12 8.79167C12.4028 9 12.7257 9.30208 12.9688 9.69792C13.2118 10.0937 13.3333 10.5278 13.3333 11V13.3333H0ZM15 13.3333V10.8333C15 10.2222 14.8299 9.63542 14.4896 9.07292C14.1493 8.51042 13.6667 8.02778 13.0417 7.625C13.75 7.70833 14.4167 7.85069 15.0417 8.05208C15.6667 8.25347 16.25 8.5 16.7917 8.79167C17.2917 9.06944 17.6736 9.37847 17.9375 9.71875C18.2014 10.059 18.3333 10.4306 18.3333 10.8333V13.3333H15ZM6.66667 6.66667C5.75 6.66667 4.96528 6.34028 4.3125 5.6875C3.65972 5.03472 3.33333 4.25 3.33333 3.33333C3.33333 2.41667 3.65972 1.63194 4.3125 0.979167C4.96528 0.326389 5.75 0 6.66667 0C7.58333 0 8.36806 0.326389 9.02083 0.979167C9.67361 1.63194 10 2.41667 10 3.33333C10 4.25 9.67361 5.03472 9.02083 5.6875C8.36806 6.34028 7.58333 6.66667 6.66667 6.66667ZM15 3.33333C15 4.25 14.6736 5.03472 14.0208 5.6875C13.3681 6.34028 12.5833 6.66667 11.6667 6.66667C11.5139 6.66667 11.3194 6.64931 11.0833 6.61458C10.8472 6.57986 10.6528 6.54167 10.5 6.5C10.875 6.05556 11.1632 5.5625 11.3646 5.02083C11.566 4.47917 11.6667 3.91667 11.6667 3.33333C11.6667 2.75 11.566 2.1875 11.3646 1.64583C11.1632 1.10417 10.875 0.611111 10.5 0.166667C10.6944 0.0972222 10.8889 0.0520833 11.0833 0.03125C11.2778 0.0104167 11.4722 0 11.6667 0C12.5833 0 13.3681 0.326389 14.0208 0.979167C14.6736 1.63194 15 2.41667 15 3.33333ZM1.66667 11.6667H11.6667V11C11.6667 10.8472 11.6285 10.7083 11.5521 10.5833C11.4757 10.4583 11.375 10.3611 11.25 10.2917C10.5 9.91667 9.74306 9.63542 8.97917 9.44792C8.21528 9.26042 7.44444 9.16667 6.66667 9.16667C5.88889 9.16667 5.11806 9.26042 4.35417 9.44792C3.59028 9.63542 2.83333 9.91667 2.08333 10.2917C1.95833 10.3611 1.85764 10.4583 1.78125 10.5833C1.70486 10.7083 1.66667 10.8472 1.66667 11V11.6667ZM6.66667 5C7.125 5 7.51736 4.83681 7.84375 4.51042C8.17014 4.18403 8.33333 3.79167 8.33333 3.33333C8.33333 2.875 8.17014 2.48264 7.84375 2.15625C7.51736 1.82986 7.125 1.66667 6.66667 1.66667C6.20833 1.66667 5.81597 1.82986 5.48958 2.15625C5.16319 2.48264 5 2.875 5 3.33333C5 3.79167 5.16319 4.18403 5.48958 4.51042C5.81597 4.83681 6.20833 5 6.66667 5Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>150–1500 student</p>
+                        </div>
+                        <!-- flex-item-2 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="10" height="9" viewBox="0 0 17 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.33333 13.3333C9.72222 13.3333 10.9028 12.8472 11.875 11.875C12.8472 10.9028 13.3333 9.72222 13.3333 8.33333C13.3333 6.94444 12.8472 5.76389 11.875 4.79167C10.9028 3.81944 9.72222 3.33333 8.33333 3.33333V8.33333L4.79167 11.875C5.27778 12.3333 5.82292 12.691 6.42708 12.9479C7.03125 13.2049 7.66667 13.3333 8.33333 13.3333ZM8.33333 16.6667C7.18056 16.6667 6.09722 16.4479 5.08333 16.0104C4.06944 15.5729 3.1875 14.9792 2.4375 14.2292C1.6875 13.4792 1.09375 12.5972 0.65625 11.5833C0.21875 10.5694 0 9.48611 0 8.33333C0 7.18056 0.21875 6.09722 0.65625 5.08333C1.09375 4.06944 1.6875 3.1875 2.4375 2.4375C3.1875 1.6875 4.06944 1.09375 5.08333 0.65625C6.09722 0.21875 7.18056 0 8.33333 0C9.48611 0 10.5694 0.21875 11.5833 0.65625C12.5972 1.09375 13.4792 1.6875 14.2292 2.4375C14.9792 3.1875 15.5729 4.06944 16.0104 5.08333C16.4479 6.09722 16.6667 7.18056 16.6667 8.33333C16.6667 9.48611 16.4479 10.5694 16.0104 11.5833C15.5729 12.5972 14.9792 13.4792 14.2292 14.2292C13.4792 14.9792 12.5972 15.5729 11.5833 16.0104C10.5694 16.4479 9.48611 16.6667 8.33333 16.6667ZM8.33333 15C10.1944 15 11.7708 14.3542 13.0625 13.0625C14.3542 11.7708 15 10.1944 15 8.33333C15 6.47222 14.3542 4.89583 13.0625 3.60417C11.7708 2.3125 10.1944 1.66667 8.33333 1.66667C6.47222 1.66667 4.89583 2.3125 3.60417 3.60417C2.3125 4.89583 1.66667 6.47222 1.66667 8.33333C1.66667 10.1944 2.3125 11.7708 3.60417 13.0625C4.89583 14.3542 6.47222 15 8.33333 15Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>45–90 min sets</p>
+                        </div>
+                        <!-- flex-item-3 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="9" height="10" viewBox="0 0 15 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.66667 11.6667C8.08333 10.3889 8.99306 9.48958 9.39583 8.96875C9.79861 8.44792 10 7.93055 10 7.41667C10 6.91667 9.81944 6.48611 9.45833 6.125C9.09722 5.76389 8.66667 5.58333 8.16667 5.58333C7.875 5.58333 7.59375 5.64236 7.32292 5.76042C7.05208 5.87847 6.83333 6.04167 6.66667 6.25C6.5 6.04167 6.28472 5.87847 6.02083 5.76042C5.75694 5.64236 5.47222 5.58333 5.16667 5.58333C4.66667 5.58333 4.23611 5.76389 3.875 6.125C3.51389 6.48611 3.33333 6.91667 3.33333 7.41667C3.33333 7.68055 3.36806 7.92361 3.4375 8.14583C3.50694 8.36806 3.65972 8.62847 3.89583 8.92708C4.13194 9.22569 4.46875 9.59028 4.90625 10.0208C5.34375 10.4514 5.93056 11 6.66667 11.6667ZM6.66667 16.6667C4.73611 16.1806 3.14236 15.0729 1.88542 13.3437C0.628472 11.6146 0 9.69444 0 7.58333V2.5L6.66667 0L13.3333 2.5V7.58333C13.3333 9.69444 12.7049 11.6146 11.4479 13.3437C10.191 15.0729 8.59722 16.1806 6.66667 16.6667ZM6.66667 14.9167C8.11111 14.4583 9.30556 13.5417 10.25 12.1667C11.1944 10.7917 11.6667 9.26389 11.6667 7.58333V3.64583L6.66667 1.77083L1.66667 3.64583V7.58333C1.66667 9.26389 2.13889 10.7917 3.08333 12.1667C4.02778 13.5417 5.22222 14.4583 6.66667 14.9167Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>Management Sage</p>
+                        </div>
+                    </div>
+                    <!-- sub-flex container of buttons -->
+                    <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
+                        <a href="" target="_blank"
+                            class="bg-[#EFCB00] px-2.5 py-2.5 rounded-md font-medium text-[#000000] max-md:text-xs">Get
+                            College Deck</a>
+                        <a href="mailto:admin@laughandvibe.com" target="_blank"
+                            class="bg-[#7C31F4] px-6 py-2.5 rounded-md font-medium text-[#FFFFFF] max-md:text-xs">Request
+                            Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why teams choose laugh and vibe section -->
+        <section id="why-laugh-and-vibe-for-colleges" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold">Why Colleges Book Laugh & Vibe
+                </h3>
+                <!-- flex container of cards -->
+                <div class="flex max-md:flex-col max-md:space-y-8 md:space-x-4 xl:space-x-10">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div
+                            class="flex justify-center items-center w-10 h-8 mb-4 bg-[#D8C925] rounded inset-shadow-[1px_2px_4.23px_#716F6F40] shadow-[2px_2px_5.2px_#716F6F80]">
+                            <svg width="26" height="20" viewBox="0 0 30 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.1667 23.6583L24.7917 19.4083L26.8333 17.425L31.2083 21.675L29.1667 23.6583ZM23.9167 6.65833L21.875 4.675L26.25 0.425L28.2917 2.40833L23.9167 6.65833ZM7.29167 6.65833L2.91667 2.40833L4.95833 0.425L9.33333 4.675L7.29167 6.65833ZM2.04167 23.6583L0 21.675L4.375 17.425L6.41667 19.4083L2.04167 23.6583ZM11.0104 21.0021L15.6042 18.3104L20.1979 21.0375L18.9948 15.9375L23.0417 12.5375L17.7188 12.0771L15.6042 7.26042L13.4896 12.0417L8.16667 12.5021L12.2135 15.9375L11.0104 21.0021ZM6.59896 26.9167L8.96875 16.9646L1.02083 10.2708L11.5208 9.38542L15.6042 0L19.6875 9.38542L30.1875 10.2708L22.2396 16.9646L24.6094 26.9167L15.6042 21.6396L6.59896 26.9167Z"
+                                    fill="#443A01" />
+                            </svg>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA]">Campus-Friendly, Not Cringe</h4>
+                        <!-- card-description -->
+                        <p class="text-xs font-normal text-[#F8F8F8]">Clean enough for faculty, fun enough for the last
+                            benchers. Material is tuned to student life, hostel stories, and exam stress.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div
+                            class="flex justify-center items-center w-10 h-8 mb-4 bg-[#A369FF] rounded inset-shadow-[1px_2px_4.23px_#716F6F40] shadow-[2px_2px_5.2px_#716F6F80]">
+                            <svg width="20" height="20" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.2083 17C8.99306 17 7.96007 16.5868 7.10937 15.7604C6.25868 14.934 5.83333 13.9306 5.83333 12.75V4.25C5.83333 3.06944 6.25868 2.06597 7.10937 1.23958C7.96007 0.413194 8.99306 0 10.2083 0C11.4236 0 12.4566 0.413194 13.3073 1.23958C14.158 2.06597 14.5833 3.06944 14.5833 4.25V12.75C14.5833 13.9306 14.158 14.934 13.3073 15.7604C12.4566 16.5868 11.4236 17 10.2083 17ZM8.75 26.9167V22.5604C6.22222 22.2299 4.13194 21.1319 2.47917 19.2667C0.826389 17.4014 0 15.2292 0 12.75H2.91667C2.91667 14.7097 3.6276 16.3802 5.04948 17.7615C6.47135 19.1427 8.19097 19.8333 10.2083 19.8333C12.2257 19.8333 13.9453 19.1427 15.3672 17.7615C16.7891 16.3802 17.5 14.7097 17.5 12.75H20.4167C20.4167 15.2292 19.5903 17.4014 17.9375 19.2667C16.2847 21.1319 14.1944 22.2299 11.6667 22.5604V26.9167H8.75ZM10.2083 14.1667C10.6215 14.1667 10.9679 14.0309 11.2474 13.7594C11.5269 13.4878 11.6667 13.1514 11.6667 12.75V4.25C11.6667 3.84861 11.5269 3.51215 11.2474 3.24062C10.9679 2.9691 10.6215 2.83333 10.2083 2.83333C9.79514 2.83333 9.44878 2.9691 9.16927 3.24062C8.88976 3.51215 8.75 3.84861 8.75 4.25V12.75C8.75 13.1514 8.88976 13.4878 9.16927 13.7594C9.44878 14.0309 9.79514 14.1667 10.2083 14.1667Z"
+                                    fill="#100129" />
+                            </svg>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA]">Host + Comics + Games</h4>
+                        <!-- card-description -->
+                        <p class="text-xs font-normal text-[#F8F8F8]">We can handle anchoring, stand-up, crowd games,
+                            and transitions so your cultural committee can actually enjoy the event.</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div
+                            class="flex justify-center items-center w-10 h-8 mb-4 bg-[#FF4545] rounded inset-shadow-[1px_2px_4.23px_#716F6F40] shadow-[2px_2px_5.2px_#716F6F80]">
+                            <svg width="24" height="24" viewBox="0 0 30 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.5833 28.3333C12.566 28.3333 10.6701 27.9615 8.89583 27.2177C7.12153 26.474 5.57812 25.4646 4.26562 24.1896C2.95312 22.9146 1.91406 21.4153 1.14844 19.6917C0.382812 17.9681 0 16.1264 0 14.1667C0 12.2069 0.382812 10.3653 1.14844 8.64167C1.91406 6.91806 2.95312 5.41875 4.26562 4.14375C5.57812 2.86875 7.12153 1.85938 8.89583 1.11563C10.6701 0.371875 12.566 0 14.5833 0C16.6007 0 18.4965 0.371875 20.2708 1.11563C22.0451 1.85938 23.5885 2.86875 24.901 4.14375C26.2135 5.41875 27.2526 6.91806 28.0182 8.64167C28.7839 10.3653 29.1667 12.2069 29.1667 14.1667C29.1667 16.1264 28.7839 17.9681 28.0182 19.6917C27.2526 21.4153 26.2135 22.9146 24.901 24.1896C23.5885 25.4646 22.0451 26.474 20.2708 27.2177C18.4965 27.9615 16.6007 28.3333 14.5833 28.3333ZM10.3542 24.7208L12.1042 20.825C11.0833 20.4708 10.2023 19.9219 9.46094 19.1781C8.71962 18.4344 8.14236 17.5667 7.72917 16.575L3.71875 18.2042C4.27778 19.7153 5.14062 21.0375 6.30729 22.1708C7.47396 23.3042 8.82292 24.1542 10.3542 24.7208ZM7.72917 11.7583C8.14236 10.7667 8.71962 9.89896 9.46094 9.15521C10.2023 8.41146 11.0833 7.8625 12.1042 7.50833L10.4271 3.6125C8.87153 4.17917 7.51042 5.02917 6.34375 6.1625C5.17708 7.29583 4.30208 8.61806 3.71875 10.1292L7.72917 11.7583ZM14.5833 18.4167C15.7986 18.4167 16.8316 18.0035 17.6823 17.1771C18.533 16.3507 18.9583 15.3472 18.9583 14.1667C18.9583 12.9861 18.533 11.9826 17.6823 11.1562C16.8316 10.3299 15.7986 9.91667 14.5833 9.91667C13.3681 9.91667 12.3351 10.3299 11.4844 11.1562C10.6337 11.9826 10.2083 12.9861 10.2083 14.1667C10.2083 15.3472 10.6337 16.3507 11.4844 17.1771C12.3351 18.0035 13.3681 18.4167 14.5833 18.4167ZM18.8125 24.7208C20.3438 24.1542 21.6866 23.3101 22.8411 22.1885C23.9957 21.067 24.8646 19.7625 25.4479 18.275L21.4375 16.575C21.0729 17.5667 20.5139 18.4226 19.7604 19.1427C19.0069 19.8628 18.1319 20.4236 17.1354 20.825L18.8125 24.7208ZM21.4375 11.6875L25.4479 10.0583C24.8646 8.57083 23.9957 7.26632 22.8411 6.14479C21.6866 5.02326 20.3438 4.17917 18.8125 3.6125L17.1354 7.57917C18.1319 7.93333 18.9948 8.47049 19.724 9.19063C20.4531 9.91076 21.0243 10.7431 21.4375 11.6875Z"
+                                    fill="#450303" />
+                            </svg>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA]">Easy Coordination & Support</h4>
+                        <!-- card-description -->
+                        <p class="text-xs font-normal text-[#F8F8F8]">We help with slot planning, tech rider, and crowd
+                            management tips so everything runs on time and looks professional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- corporate-packages section -->
+        <section id="corporate-packages" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center py-12 space-y-10">
+                <!-- sub-flex heading container  -->
+                <div class="flex flex-col items-center gap-6 sm:flex-row sm:justify-around lg:justify-evenly sm:w-full">
+                    <!-- section title -->
+                    <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold">College Show Packages
+                    </h3>
+                    <!-- button -->
+                    <a href="" target="_blank"
+                        class="flex space-x-2 items-center bg-[#D3B302] px-2.5 py-2.5 rounded-md font-medium text-[#0B0B0B] max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 15L12 11L10.6 9.6L9 11.15V7H7V11.15L5.4 9.6L4 11L8 15ZM2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V6L6 0H14C14.55 0 15.0208 0.195833 15.4125 0.5875C15.8042 0.979167 16 1.45 16 2V18C16 18.55 15.8042 19.0208 15.4125 19.4125C15.0208 19.8042 14.55 20 14 20H2ZM2 18H14V2H6.85L2 6.85V18Z"
+                                fill="black" />
+                        </svg>
+                        <span>Download Deck</span></a>
+                </div>
+
+                <!-- flex container of cards -->
+                <div class="flex flex-col sm:flex-row gap-16 justify-center md:justify-around flex-wrap">
+                    <!-- card-1 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-8 p-8 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] bg-linear-to-bl from-[#30023F] to-[#000000] rounded-[20px] text-xs border border-[#7C31F4]">
+                        <!-- profile -->
+                        <div class="flex flex-col justify-center">
+                            <!-- sub-highlight tab -->
+                            <p class="font-normal text-[#F8F8F8] px-2 pb-4 uppercase">Freshers / Induction</p>
+                            <!-- card-title, description -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base pb-0.5">Freshers' Icebreaker Set</h4>
+                            <p class="font-normal text-[#F8F8F8] px-2">30–40 mins interactive set to break awkwardness
+                                and get seniors & juniors laughing together.</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list" class="px-1 py-6 text-[#F8F8F8] font-normal list-inside leading-7">
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                1 host + 1 comic</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Light crowd-work, fun intros</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Perfect for auditorium or quadrangle</li>
+                        </ul>
+
+                        <!-- sub-flex container of buttons -->
+                        <div class="flex flex-col space-y-4 space-x-0 xl:flex-row xl:space-x-6 xl:space-y-0 p-1">
+                            <a href="" target="_blank"
+                                class="bg-transparent border border-[#BCB7B7] px-5 py-2 rounded-md font-medium text-[#BEBBBB] text-center max-md:text-xs">Enquire</a>
+                            <a href="" target="_blank"
+                                class="bg-[#7C31F4] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Book
+                                Tentative Slot</a>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-8 p-8 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] bg-linear-to-bl from-[#3F3003] to-[#000000] rounded-[20px] text-xs border border-[#FFC310]">
+                        <!-- profile -->
+                        <div class="flex flex-col justify-center">
+                            <!-- sub-highlight tab -->
+                            <p class="font-normal text-[#F8F8F8] px-2 pb-4 uppercase">Cultural Fest • Flagship</p>
+                            <!-- card-title, description -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base pb-0.5">Fest Headline Comedy Night
+                            </h4>
+                            <p class="font-normal text-[#F8F8F8] px-2">60–75 mins showcase for your flagship night with
+                                multiple comics and high production value.</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list" class="px-1 py-6 text-[#F8F8F8] font-normal list-inside leading-7">
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                1 host + 2–3 comics</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Crowd games & on-stage bits</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Works for 400–1500 students</li>
+                        </ul>
+
+                        <!-- sub-flex container of buttons -->
+                        <div class="flex flex-col space-y-4 space-x-0 xl:flex-row xl:space-x-6 xl:space-y-0 p-1">
+                            <a href="" target="_blank"
+                                class="bg-transparent border border-[#BCB7B7] px-5 py-2 rounded-md font-medium text-[#BEBBBB] text-center max-md:text-xs">Enquire</a>
+                            <a href="" target="_blank"
+                                class="bg-[#D3B302] px-6 py-2 rounded-md font-medium text-[#0B0B0B] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Book
+                                Tentative Slot</a>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-8 p-8 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] bg-linear-to-bl from-[#4A1704] to-[#000000] rounded-[20px] text-xs border border-[#F35D23]">
+                        <!-- profile -->
+                        <div class="flex flex-col justify-center">
+                            <!-- sub-highlight tab -->
+                            <p class="font-normal text-[#F8F8F8] px-2 pb-4 uppercase">Department / Farewell</p>
+                            <!-- card-title, description -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base pb-0.5">Department / Farewell Special
+                            </h4>
+                            <p class="font-normal text-[#F8F8F8] px-2">A tighter set for 100–300 students, tuned to your
+                                department, inside jokes, and batch stories.</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list" class="px-1 py-6 text-[#F8F8F8] font-normal list-inside leading-7">
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                45–60 mins curated set</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Works indoor or open-air</li>
+                            <li
+                                class="relative ml-7 before:content-[url('../assets/icons/check-circle-icon.svg')] before:absolute before:top-1 before:-left-7">
+                                Pre-approved faculty roast segment</li>
+                        </ul>
+
+                        <!-- sub-flex container of buttons -->
+                        <div class="flex flex-col space-y-4 space-x-0 xl:flex-row xl:space-x-6 xl:space-y-0 p-1">
+                            <a href="" target="_blank"
+                                class="bg-transparent border border-[#CECECE] px-5 py-2 rounded-md font-medium text-[#BEBBBB] text-center max-md:text-xs">Enquire</a>
+                            <a href="" target="_blank"
+                                class="bg-[#F35D23] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Book
+                                Tentative Slot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trusted by campuses and fests section -->
+        <section id="trusted-by-campuses-section" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold">Trusted by Campuses & Fests
+                </h3>
+                <!-- campuses flex-container -->
+                <div class="flex gap-6 pt-3 pb-8 justify-center items-center flex-wrap">
+                    <img class="w-44 h-14" src="../assets/images/campuses/iit-kanpur.png" alt="iit-kanpur.png">
+                    <img class="w-44 h-14" src="../assets/images/campuses/iit-kanpur.png" alt="iit-kanpur.png">
+                    <img class="w-44 h-14" src="../assets/images/campuses/iit-kanpur.png" alt="iit-kanpur.png">
+                    <img class="w-44 h-14" src="../assets/images/campuses/iit-kanpur.png" alt="iit-kanpur.png">
+                    <img class="w-44 h-14" src="../assets/images/campuses/iit-kanpur.png" alt="iit-kanpur.png">
+                    <img class="w-44 h-14" src="../assets/images/campuses/iit-kanpur.png" alt="iit-kanpur.png">
+                </div>
+                <!-- flex container of cards -->
+                <div class="flex max-lg:flex-col max-lg:space-y-8 lg:space-x-10">
+                    <!-- card-1 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-0.5 px-4 py-4 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] -bg-linear-210 from-[#00000033] via-30% via-[#00000033] via-65% to-[#8600B233] to-95% rounded-[20px] text-xs border border-[#7C31F480]">
+                        <!-- profile -->
+                        <div class="flex items-center">
+                            <!-- brand-logo-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/images/campuses/iit-kanpur-logo.png"
+                                alt="iit-kanpur-logo.png">
+                            <!-- brand name -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base">Metro Engg College – Tech Fest</h4>
+                        </div>
+                        <!-- event details -->
+                        <p class="p-1 text-[#F8F8F8]">
+                            60-min headline show in an open-air stage. 800+ students, full crowd participation, zero
+                            noise complaints.
+                        </p>
+                        <!-- button -->
+                        <div class=" flex space-x-0.5 p-1">
+                            <a href="" target="_blank"
+                                class="bg-[#7C31F4] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Team
+                                Offsite Style Flow</a>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-0.5 px-4 py-4 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] -bg-linear-210 from-[#00000033] via-30% via-[#00000033] via-65% to-[#FFC31033] to-95% rounded-[20px] text-xs border border-[#FFC31080]">
+                        <!-- profile -->
+                        <div class="flex items-center">
+                            <!-- brand-logo-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/images/campuses/iit-kanpur-logo.png"
+                                alt="iit-kanpur-logo.png">
+                            <!-- brand name -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base">TCS Ops – Offsite</h4>
+                        </div>
+                        <!-- event details -->
+                        <p class="p-1 text-[#F8F8F8]">
+                            Emcee + 2 comics + team games; zero-profanity brief; standing ovation; repeat booking next
+                            quarter.
+                        </p>
+                        <!-- button -->
+                        <div class=" flex space-x-0.5 p-1">
+                            <a href="" target="_blank"
+                                class="bg-[#D3B302] px-6 py-2 rounded-md font-medium text-[#0B0B0B] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">See
+                                Event Flowh</a>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-0.5 px-4 py-4 inset-shadow-[4.51px_6.01px_6.01px_#716F6F40] shadow-[6.01px_6.01px_8.12px_#716F6F80] -bg-linear-210 from-[#00000033] via-30% via-[#00000033] via-65% to-[#F35D2333] to-95% rounded-[20px] text-xs border border-[#F35D2380]">
+                        <!-- profile -->
+                        <div class="flex items-center">
+                            <!-- brand-logo-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/images/campuses/iit-kanpur-logo.png"
+                                alt="iit-kanpur-logo.png">
+                            <!-- brand name -->
+                            <h4 class="font-semibold px-2 text-[#FAFAFA] text-base">Design College – Fest Aftermovie
+                            </h4>
+                        </div>
+                        <!-- event details -->
+                        <p class="p-1 text-[#F8F8F8]">
+                            45-min intimate show captured in 4K for their fest aftermovie and social media promos.
+                        </p>
+                        <!-- button -->
+                        <div class=" flex space-x-0.5 p-1">
+                            <a href="" target="_blank"
+                                class="bg-[#F35D23] px-6 py-2 rounded-md font-medium text-[#FFFFFF] text-center max-md:text-xs shadow-[0_2.93px_2.93px_#FFFFFF40]">Ask
+                                for Recording Sample</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faqs section -->
+        <section id="faqs-section" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 max-w-[1300px] mx-auto text-white">
+                <!-- section title -->
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold pb-6">FAQs</h3>
+                <!-- faqs-cards -->
+                <!-- grid container of cards -->
+                <div class="max-sm:text-xs grid gap-10 lg:grid-cols-2 md:gap-4 xl:gap-8 place-items-center justify-items-stretch">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 mb-3 text-[#A2A1A1] text-sm uppercase">Is the content safe for faculty
+                            and management?</h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">Yes. We keep it clean, campus-friendly, and
+                            avoid religion, politics, and explicit content. Sets can be pre-aligned with your faculty
+                            coordinator if needed.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 mb-3 text-[#A2A1A1] text-sm uppercase">What tech do we need to arrange?
+                        </h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">Basic sound system (2 mics + speakers) and
+                            stage lighting is ideal. If you don't have it sorted, we can share a simple tech rider or
+                            connect you to vendors.</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 mb-3 text-[#A2A1A1] text-sm uppercase">Do you travel outside Pune?</h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">Yes. We travel for fests and flagship events.
+                            Travel and stay are either arranged by the college or added to the quote.</p>
+                    </div>
+                    <!-- card-4 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 mb-3 text-[#A2A1A1] text-sm uppercase">Can we record the show for our
+                            aftermovie?</h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">Yes, with prior consent. We can either let
+                            your team record or bring our own video crew as an add-on.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan your next team event section -->
+        <section id="plan-team-event" class="bg-linear-to-bl from-[#000000] to-[#7D27CE] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div
+                class="flex flex-col justify-center items-center lg:flex-row lg:justify-around space-y-12 lg:space-x-6 py-16">
+                <!-- plan c-t-a -->
+                <div class="flex flex-col justify-center items-center lg:items-start w-full md:max-w-[500px]">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-[#E7E5E5] font-semibold max-md:text-center">Plan
+                        your next college event with us.</h2>
+                    <p class="max-w-5xl font-light pt-3 pb-6 max-lg:text-center">
+                        Share your fest dates, rough budget, and expected crowd. We’ll suggest the right format—freshers
+                        icebreaker, fest headliner, or a chill department show.
+                    </p>
+                    <!-- sub-flex container of buttons -->
+                    <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
+                        <a href="#" target="_blank"
+                            class="bg-[#EFCB00] px-6 py-2.5 rounded-md font-medium text-[#000000] max-md:text-xs cursor-pointer">Enquire
+                            Now</a>
+                        <a href="#" target="_blank"
+                            class="bg-[#7C31F4] px-6 py-2.5 rounded-md font-medium text-[#FFFFFF] max-md:text-xs cursor-pointer">Request
+                            Callback</a>
+                    </div>
+                </div>
+                <!-- contact information -->
+                <div class="grid xl:grid-cols-2 gap-8 p-5 rounded-[20px] bg-[#3B3A3A66] lg:max-w-[700px]">
+                    <!-- call -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">CALL / WHATSAPP</span>
+                        <a href="tel:+91 98765 43210" class="font-semibold" target="_blank">+91 98765
+                            43210</a>
+                    </div>
+                    <!-- mail -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">MAIL</span>
+                        <a href="mailto:admin@laughandvibe.com" target="_blank"
+                            class="font-semibold">admin@laughandvibe.com</a>
+                    </div>
+                    <!-- location -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">STUDIO LOCATION</span>
+                        <a href="https://www.google.com/maps/place/Laugh+and+Vibe+Club/@18.5011468,73.9242248,15z/data=!4m8!3m7!1s0x3bc2c11b7825bd91:0x561f72d585981e9f!8m2!3d18.5407657!4d73.8850219!9m1!1b1!16s%2Fg%2F11m64rdz73?authuser=2&entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer" loading="lazy" class="font-semibold">
+                            Laugh & Vibe Club, Koregaon Park, Pune
+                        </a>
+                    </div>
+                    <!-- social -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">Turnaround</span>
+                        <p class="font-semibold">48–72 hours</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- footer -->
+    <footer
+        class="max-w-[1600px] mx-auto bg-[#3A3A3A] py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full text-sm flex flex-col justify-center items-center">
+        <h6 class="text-[#EAEAEA] font-semibold text-center">© 2025 Laugh & Vibe. All rights reserved.</h6>
+        <p class="text-[#9A9292] text-xs font-semibold text-center">Comedy • Music • Corporate • Private Events</p>
+    </footer>
+</body>
+
+</html>
