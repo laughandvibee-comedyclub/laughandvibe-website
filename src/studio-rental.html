@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laugh and Vibe</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-[#FFEFEF] font-poppins scroll-smooth">
+    <!-- header -->
+    <header class="max-w-[1600px] mx-auto bg-black py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full">
+        <!-- header-main-flex container -->
+        <div class=" flex flex-col items-center lg:flex-row justify-between">
+            <!-- input -->
+            <input class="hidden peer" type="checkbox" name="menu-checkbox" id="menu-checkbox"
+                area-labelledby="hamburger-icon close-icon">
+            <!-- logo -->
+            <div class="flex items-center w-full lg:w-fit ">
+                <a href="../index.html#"
+                    class="flex items-center lg:w-fit max-lg:py-1 lg:flex-col lg:items-start xl:flex-row xl:items-center">
+                    <img src="../assets/images/home/logo.png" alt="laugh-and-vibe-logo" class="size-14">
+                    <span class="hidden md:block pl-4 text-xs lg:pl-0 xl:pl-4">Laugh and Vibe</span>
+                </a>
+            </div>
+
+            <!-- labels for input -->
+            <label id="hamburger-icon"
+                class="peer-checked:hidden absolute top-4 right-3 transition-all duration-300 ease-in-out lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+            </label>
+            <label id="close-icon"
+                class="hidden peer-checked:block absolute top-4 right-3 transition-all duration-300 ease-in-out lg:peer-checked:hidden lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www .w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                </svg>
+            </label>
+
+            <!-- nav links -->
+            <nav
+                class="flex flex-col w-full lg:w-fit divide-y divide-gray-600 lg:divide-y-0 lg:flex-row space-x-2.5 xl:space-x-4 2xl:space-x-8 text-xs flex-wrap max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[600px] transition-all duration-300 ease-in-out">
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-t border-gray-600">
+                    <a class="" href="../index.html#">Home</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./about.html">About</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#our-services-section">Service</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="#">Shows</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./for-corporates.html">For Corporates</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../src/for-colleges.html">For Colleges</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./artists.html">Artists</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#inside-the-room">Gallery</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./studio-rental.html">Studio Rental</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-b border-gray-600">
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+
+            <!-- book tickets button -->
+            <div
+                class="max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[100px] max-lg:peer-checked:my-6 transition-all duration-300 ease-in-out rounded">
+                <a href="https://linktr.ee/laughandvibe" target="_blank"
+                    class="flex justify-center p-3 bg-linear-to-r from-[#9049D3] via-28% via-[#CE5573] via-65% via-[#F35D23] to-[#FFC310] to-100% text-black text-xs text-center rounded-xl lg:my-0">
+                    Book Tickets
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="max-w-[1600px] mx-auto w-full">
+        <!-- studio-rental-hero-section -->
+        <section id="studio-rental-hero-section"
+            class="bg-linear-to-bl from-[#000000] to-[#7D27CE] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center space-y-12 py-16">
+                <!-- c-t-a- container -->
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-2xl text-[#E4E4E4] font-bold text-center lg:text-4xl lg:leading-14">Studio Rental –
+                        Koregaon Park, Pune</h1>
+                    <p class="max-w-3xl font-light py-8 text-center text-[#DEDBDB]">
+                        A 50-seater performance and production space with pro lights, mics, and cameras. Perfect for
+                        comedy shows, music gigs, podcasts, workshops, launches, and corporate offsites.
+                    </p>
+                    <!-- highlights-main-flex container -->
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-8 text-xs text-[#CDCDCD] py-6">
+                        <!-- flex-item-1 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="12" height="12" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 13.3333V11C0 10.5278 0.121528 10.0937 0.364583 9.69792C0.607639 9.30208 0.930556 9 1.33333 8.79167C2.19444 8.36111 3.06944 8.03819 3.95833 7.82292C4.84722 7.60764 5.75 7.5 6.66667 7.5C7.58333 7.5 8.48611 7.60764 9.375 7.82292C10.2639 8.03819 11.1389 8.36111 12 8.79167C12.4028 9 12.7257 9.30208 12.9688 9.69792C13.2118 10.0937 13.3333 10.5278 13.3333 11V13.3333H0ZM15 13.3333V10.8333C15 10.2222 14.8299 9.63542 14.4896 9.07292C14.1493 8.51042 13.6667 8.02778 13.0417 7.625C13.75 7.70833 14.4167 7.85069 15.0417 8.05208C15.6667 8.25347 16.25 8.5 16.7917 8.79167C17.2917 9.06944 17.6736 9.37847 17.9375 9.71875C18.2014 10.059 18.3333 10.4306 18.3333 10.8333V13.3333H15ZM6.66667 6.66667C5.75 6.66667 4.96528 6.34028 4.3125 5.6875C3.65972 5.03472 3.33333 4.25 3.33333 3.33333C3.33333 2.41667 3.65972 1.63194 4.3125 0.979167C4.96528 0.326389 5.75 0 6.66667 0C7.58333 0 8.36806 0.326389 9.02083 0.979167C9.67361 1.63194 10 2.41667 10 3.33333C10 4.25 9.67361 5.03472 9.02083 5.6875C8.36806 6.34028 7.58333 6.66667 6.66667 6.66667ZM15 3.33333C15 4.25 14.6736 5.03472 14.0208 5.6875C13.3681 6.34028 12.5833 6.66667 11.6667 6.66667C11.5139 6.66667 11.3194 6.64931 11.0833 6.61458C10.8472 6.57986 10.6528 6.54167 10.5 6.5C10.875 6.05556 11.1632 5.5625 11.3646 5.02083C11.566 4.47917 11.6667 3.91667 11.6667 3.33333C11.6667 2.75 11.566 2.1875 11.3646 1.64583C11.1632 1.10417 10.875 0.611111 10.5 0.166667C10.6944 0.0972222 10.8889 0.0520833 11.0833 0.03125C11.2778 0.0104167 11.4722 0 11.6667 0C12.5833 0 13.3681 0.326389 14.0208 0.979167C14.6736 1.63194 15 2.41667 15 3.33333ZM1.66667 11.6667H11.6667V11C11.6667 10.8472 11.6285 10.7083 11.5521 10.5833C11.4757 10.4583 11.375 10.3611 11.25 10.2917C10.5 9.91667 9.74306 9.63542 8.97917 9.44792C8.21528 9.26042 7.44444 9.16667 6.66667 9.16667C5.88889 9.16667 5.11806 9.26042 4.35417 9.44792C3.59028 9.63542 2.83333 9.91667 2.08333 10.2917C1.95833 10.3611 1.85764 10.4583 1.78125 10.5833C1.70486 10.7083 1.66667 10.8472 1.66667 11V11.6667ZM6.66667 5C7.125 5 7.51736 4.83681 7.84375 4.51042C8.17014 4.18403 8.33333 3.79167 8.33333 3.33333C8.33333 2.875 8.17014 2.48264 7.84375 2.15625C7.51736 1.82986 7.125 1.66667 6.66667 1.66667C6.20833 1.66667 5.81597 1.82986 5.48958 2.15625C5.16319 2.48264 5 2.875 5 3.33333C5 3.79167 5.16319 4.18403 5.48958 4.51042C5.81597 4.83681 6.20833 5 6.66667 5Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>50 Seats</p>
+                        </div>
+                        <!-- flex-item-2 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="13" height="12" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.2083 17C8.99306 17 7.96007 16.5868 7.10937 15.7604C6.25868 14.934 5.83333 13.9306 5.83333 12.75V4.25C5.83333 3.06944 6.25868 2.06597 7.10937 1.23958C7.96007 0.413194 8.99306 0 10.2083 0C11.4236 0 12.4566 0.413194 13.3073 1.23958C14.158 2.06597 14.5833 3.06944 14.5833 4.25V12.75C14.5833 13.9306 14.158 14.934 13.3073 15.7604C12.4566 16.5868 11.4236 17 10.2083 17ZM8.75 26.9167V22.5604C6.22222 22.2299 4.13194 21.1319 2.47917 19.2667C0.826389 17.4014 0 15.2292 0 12.75H2.91667C2.91667 14.7097 3.6276 16.3802 5.04948 17.7615C6.47135 19.1427 8.19097 19.8333 10.2083 19.8333C12.2257 19.8333 13.9453 19.1427 15.3672 17.7615C16.7891 16.3802 17.5 14.7097 17.5 12.75H20.4167C20.4167 15.2292 19.5903 17.4014 17.9375 19.2667C16.2847 21.1319 14.1944 22.2299 11.6667 22.5604V26.9167H8.75ZM10.2083 14.1667C10.6215 14.1667 10.9679 14.0309 11.2474 13.7594C11.5269 13.4878 11.6667 13.1514 11.6667 12.75V4.25C11.6667 3.84861 11.5269 3.51215 11.2474 3.24062C10.9679 2.9691 10.6215 2.83333 10.2083 2.83333C9.79514 2.83333 9.44878 2.9691 9.16927 3.24062C8.88976 3.51215 8.75 3.84861 8.75 4.25V12.75C8.75 13.1514 8.88976 13.4878 9.16927 13.7594C9.44878 14.0309 9.79514 14.1667 10.2083 14.1667Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>2x Mics</p>
+                        </div>
+                        <!-- flex-item-3 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="16" height="14" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.33333 12.0833C9.375 12.0833 10.2604 11.7188 10.9896 10.9896C11.7187 10.2604 12.0833 9.375 12.0833 8.33333C12.0833 7.29167 11.7187 6.40625 10.9896 5.67708C10.2604 4.94792 9.375 4.58333 8.33333 4.58333C7.29167 4.58333 6.40625 4.94792 5.67708 5.67708C4.94792 6.40625 4.58333 7.29167 4.58333 8.33333C4.58333 9.375 4.94792 10.2604 5.67708 10.9896C6.40625 11.7188 7.29167 12.0833 8.33333 12.0833ZM8.33333 10.4167C7.75 10.4167 7.25694 10.2153 6.85417 9.8125C6.45139 9.40972 6.25 8.91667 6.25 8.33333C6.25 7.75 6.45139 7.25694 6.85417 6.85417C7.25694 6.45139 7.75 6.25 8.33333 6.25C8.91667 6.25 9.40972 6.45139 9.8125 6.85417C10.2153 7.25694 10.4167 7.75 10.4167 8.33333C10.4167 8.91667 10.2153 9.40972 9.8125 9.8125C9.40972 10.2153 8.91667 10.4167 8.33333 10.4167ZM1.66667 15C1.20833 15 0.815972 14.8368 0.489583 14.5104C0.163194 14.184 0 13.7917 0 13.3333V3.33333C0 2.875 0.163194 2.48264 0.489583 2.15625C0.815972 1.82986 1.20833 1.66667 1.66667 1.66667H4.29167L5.83333 0H10.8333L12.375 1.66667H15C15.4583 1.66667 15.8507 1.82986 16.1771 2.15625C16.5035 2.48264 16.6667 2.875 16.6667 3.33333V13.3333C16.6667 13.7917 16.5035 14.184 16.1771 14.5104C15.8507 14.8368 15.4583 15 15 15H1.66667ZM1.66667 13.3333H15V3.33333H11.625L10.1042 1.66667H6.5625L5.04167 3.33333H1.66667V13.3333Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>2x 4K Cameras</p>
+                        </div>
+                        <!-- flex-item-4 -->
+                        <div
+                            class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                            <svg width="16" height="14" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.16667 13.3333C3.70833 13.3333 3.31597 13.1701 2.98958 12.8437C2.66319 12.5174 2.5 12.125 2.5 11.6667V10.625C1.70833 10.0833 1.09375 9.38889 0.65625 8.54167C0.21875 7.69444 0 6.79167 0 5.83333C0 4.20833 0.565972 2.82986 1.69792 1.69792C2.82986 0.565972 4.20833 0 5.83333 0C7.45833 0 8.83681 0.565972 9.96875 1.69792C11.1007 2.82986 11.6667 4.20833 11.6667 5.83333C11.6667 6.79167 11.4479 7.69097 11.0104 8.53125C10.5729 9.37153 9.95833 10.0694 9.16667 10.625V11.6667C9.16667 12.125 9.00347 12.5174 8.67708 12.8437C8.35069 13.1701 7.95833 13.3333 7.5 13.3333H4.16667ZM4.16667 11.6667H7.5V9.75L8.20833 9.25C8.77778 8.86111 9.21875 8.36458 9.53125 7.76042C9.84375 7.15625 10 6.51389 10 5.83333C10 4.68056 9.59375 3.69792 8.78125 2.88542C7.96875 2.07292 6.98611 1.66667 5.83333 1.66667C4.68056 1.66667 3.69792 2.07292 2.88542 2.88542C2.07292 3.69792 1.66667 4.68056 1.66667 5.83333C1.66667 6.51389 1.82292 7.15625 2.13542 7.76042C2.44792 8.36458 2.88889 8.86111 3.45833 9.25L4.16667 9.75V11.6667ZM4.16667 16.6667C3.93056 16.6667 3.73264 16.5868 3.57292 16.4271C3.41319 16.2674 3.33333 16.0694 3.33333 15.8333V15H8.33333V15.8333C8.33333 16.0694 8.25347 16.2674 8.09375 16.4271C7.93403 16.5868 7.73611 16.6667 7.5 16.6667H4.16667Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <p>4x Lights</p>
+                        </div>
+                    </div>
+                    <!-- sub-flex container of buttons -->
+                    <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
+                        <a href="https://drive.google.com/file/d/1-dEVJ8U3L09YReHxWHXnBqwJ0jK_6Z3n/view?usp=sharing"
+                            target="_blank"
+                            class="bg-[#EFCB00] px-2.5 py-2.5 rounded-[6px] font-medium text-[#000000] max-md:text-xs cursor-pointer">Get
+                            Corporate Deck</a>
+                        <a href="mailto:admin@laughandvibe.com" target="_blank"
+                            class="bg-[#7C31F4] px-6 py-2.5 rounded-md font-medium text-[#FFFFFF] max-md:text-xs">Request
+                            Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- highlights section -->
+        <section id="highlights-section" class="bg-[#0E0E0E] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <!-- flex container of cards -->
+                <div class="grid gap-4 min-[450px]:grid-cols-2 min-[900px]:grid-cols-4">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A33] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="13" height="13" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 13.3333V11C0 10.5278 0.121528 10.0937 0.364583 9.69792C0.607639 9.30208 0.930556 9 1.33333 8.79167C2.19444 8.36111 3.06944 8.03819 3.95833 7.82292C4.84722 7.60764 5.75 7.5 6.66667 7.5C7.58333 7.5 8.48611 7.60764 9.375 7.82292C10.2639 8.03819 11.1389 8.36111 12 8.79167C12.4028 9 12.7257 9.30208 12.9688 9.69792C13.2118 10.0937 13.3333 10.5278 13.3333 11V13.3333H0ZM15 13.3333V10.8333C15 10.2222 14.8299 9.63542 14.4896 9.07292C14.1493 8.51042 13.6667 8.02778 13.0417 7.625C13.75 7.70833 14.4167 7.85069 15.0417 8.05208C15.6667 8.25347 16.25 8.5 16.7917 8.79167C17.2917 9.06944 17.6736 9.37847 17.9375 9.71875C18.2014 10.059 18.3333 10.4306 18.3333 10.8333V13.3333H15ZM6.66667 6.66667C5.75 6.66667 4.96528 6.34028 4.3125 5.6875C3.65972 5.03472 3.33333 4.25 3.33333 3.33333C3.33333 2.41667 3.65972 1.63194 4.3125 0.979167C4.96528 0.326389 5.75 0 6.66667 0C7.58333 0 8.36806 0.326389 9.02083 0.979167C9.67361 1.63194 10 2.41667 10 3.33333C10 4.25 9.67361 5.03472 9.02083 5.6875C8.36806 6.34028 7.58333 6.66667 6.66667 6.66667ZM15 3.33333C15 4.25 14.6736 5.03472 14.0208 5.6875C13.3681 6.34028 12.5833 6.66667 11.6667 6.66667C11.5139 6.66667 11.3194 6.64931 11.0833 6.61458C10.8472 6.57986 10.6528 6.54167 10.5 6.5C10.875 6.05556 11.1632 5.5625 11.3646 5.02083C11.566 4.47917 11.6667 3.91667 11.6667 3.33333C11.6667 2.75 11.566 2.1875 11.3646 1.64583C11.1632 1.10417 10.875 0.611111 10.5 0.166667C10.6944 0.0972222 10.8889 0.0520833 11.0833 0.03125C11.2778 0.0104167 11.4722 0 11.6667 0C12.5833 0 13.3681 0.326389 14.0208 0.979167C14.6736 1.63194 15 2.41667 15 3.33333ZM1.66667 11.6667H11.6667V11C11.6667 10.8472 11.6285 10.7083 11.5521 10.5833C11.4757 10.4583 11.375 10.3611 11.25 10.2917C10.5 9.91667 9.74306 9.63542 8.97917 9.44792C8.21528 9.26042 7.44444 9.16667 6.66667 9.16667C5.88889 9.16667 5.11806 9.26042 4.35417 9.44792C3.59028 9.63542 2.83333 9.91667 2.08333 10.2917C1.95833 10.3611 1.85764 10.4583 1.78125 10.5833C1.70486 10.7083 1.66667 10.8472 1.66667 11V11.6667ZM6.66667 5C7.125 5 7.51736 4.83681 7.84375 4.51042C8.17014 4.18403 8.33333 3.79167 8.33333 3.33333C8.33333 2.875 8.17014 2.48264 7.84375 2.15625C7.51736 1.82986 7.125 1.66667 6.66667 1.66667C6.20833 1.66667 5.81597 1.82986 5.48958 2.15625C5.16319 2.48264 5 2.875 5 3.33333C5 3.79167 5.16319 4.18403 5.48958 4.51042C5.81597 4.83681 6.20833 5 6.66667 5Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2">Capacity</p>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA] text-sm">20 Seats + standing</h4>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A33] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="13" height="13" viewBox="0 0 17 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.55851 9.44813C8.07815 9.44813 8.523 9.26311 8.89306 8.89306C9.26311 8.523 9.44813 8.07815 9.44813 7.55851C9.44813 7.03886 9.26311 6.59401 8.89306 6.22396C8.523 5.85391 8.07815 5.66888 7.55851 5.66888C7.03886 5.66888 6.59401 5.85391 6.22396 6.22396C5.85391 6.59401 5.66888 7.03886 5.66888 7.55851C5.66888 8.07815 5.85391 8.523 6.22396 8.89306C6.59401 9.26311 7.03886 9.44813 7.55851 9.44813ZM7.55851 16.3925C9.47963 14.6289 10.9047 13.0266 11.8338 11.5858C12.7629 10.1449 13.2274 8.8655 13.2274 7.74747C13.2274 6.03106 12.6802 4.62565 11.5858 3.53124C10.4914 2.43683 9.14894 1.88963 7.55851 1.88963C5.96807 1.88963 4.62565 2.43683 3.53124 3.53124C2.43683 4.62565 1.88963 6.03106 1.88963 7.74747C1.88963 8.8655 2.35416 10.1449 3.28323 11.5858C4.21229 13.0266 5.63739 14.6289 7.55851 16.3925ZM7.55851 18.8963C5.02326 16.7389 3.12969 14.7352 1.87782 12.8849C0.625939 11.0346 0 9.32216 0 7.74747C0 5.38544 0.759787 3.50368 2.27936 2.10221C3.79894 0.700737 5.55865 0 7.55851 0C9.55836 0 11.3181 0.700737 12.8377 2.10221C14.3572 3.50368 15.117 5.38544 15.117 7.74747C15.117 9.32216 14.4911 11.0346 13.2392 12.8849C11.9873 14.7352 10.0938 16.7389 7.55851 18.8963Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2">Location</p>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA] text-sm">Koreagon Park</h4>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A33] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="13" height="13" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.2826 8.50332H13.6998V6.61369H15.5894C15.9831 6.61369 16.3177 6.47591 16.5933 6.20034C16.8689 5.92477 17.0066 5.59015 17.0066 5.19647V4.25166C17.0066 3.85799 16.8689 3.52337 16.5933 3.2478C16.3177 2.97222 15.9831 2.83444 15.5894 2.83444H12.2826V8.50332ZM13.6998 5.19647V4.25166H15.5894V5.19647H13.6998ZM10.3929 11.3378C9.8733 11.3378 9.42845 11.1527 9.0584 10.7827C8.68835 10.4126 8.50332 9.96778 8.50332 9.44813V1.88963C8.50332 1.36998 8.68835 0.92513 9.0584 0.555078C9.42845 0.185026 9.8733 0 10.3929 0H17.9515C18.4711 0 18.916 0.185026 19.286 0.555078C19.6561 0.92513 19.8411 1.36998 19.8411 1.88963V9.44813C19.8411 9.96778 19.6561 10.4126 19.286 10.7827C18.916 11.1527 18.4711 11.3378 17.9515 11.3378H15.117V17.9515H13.2274V11.3378H10.3929ZM10.3929 9.44813H17.9515V1.88963H10.3929V9.44813ZM5.66888 17.9515C5.40118 17.9515 5.17679 17.8609 4.9957 17.6798C4.81461 17.4987 4.72407 17.2743 4.72407 17.0066V16.0618H0V14.1722H5.66888V9.44813H0V7.55851H4.91303L3.92098 4.72407H0V2.83444H4.25166C4.55085 2.83444 4.82248 2.92105 5.06656 3.09426C5.31064 3.26748 5.47992 3.49581 5.5744 3.77925L7.55851 9.44813V17.0066C7.55851 17.2743 7.46796 17.4987 7.28687 17.6798C7.10578 17.8609 6.88139 17.9515 6.61369 17.9515H5.66888ZM3.30685 13.2274C3.70052 13.2274 4.03514 13.0896 4.31071 12.814C4.58628 12.5385 4.72407 12.2038 4.72407 11.8102C4.72407 11.4165 4.58628 11.0819 4.31071 10.8063C4.03514 10.5307 3.70052 10.3929 3.30685 10.3929C2.91317 10.3929 2.57855 10.5307 2.30298 10.8063C2.02741 11.0819 1.88963 11.4165 1.88963 11.8102C1.88963 12.2038 2.02741 12.5385 2.30298 12.814C2.57855 13.0896 2.91317 13.2274 3.30685 13.2274Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2">Parking</p>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA] text-sm">On-site & street</h4>
+                    </div>
+                    <!-- card-4 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:max-w-xs md:max-w-56 lg:max-w-2xs p-4 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A33] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="13" height="13" viewBox="0 0 21 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.3378 16.0618C10.6764 16.0618 10.1174 15.8335 9.66072 15.3768C9.20406 14.9202 8.97573 14.3612 8.97573 13.6998C8.97573 13.0384 9.20406 12.4794 9.66072 12.0227C10.1174 11.5661 10.6764 11.3378 11.3378 11.3378C11.9991 11.3378 12.5581 11.5661 13.0148 12.0227C13.4715 12.4794 13.6998 13.0384 13.6998 13.6998C13.6998 14.3612 13.4715 14.9202 13.0148 15.3768C12.5581 15.8335 11.9991 16.0618 11.3378 16.0618ZM5.99956 10.7236L4.01546 8.69228C4.94452 7.76322 6.035 7.02705 7.28687 6.48378C8.53875 5.94051 9.88905 5.66888 11.3378 5.66888C12.7865 5.66888 14.1368 5.94445 15.3886 6.49559C16.6405 7.04673 17.731 7.79471 18.6601 8.73952L16.676 10.7236C15.9831 10.0308 15.18 9.4875 14.2667 9.09383C13.3534 8.70016 12.3771 8.50332 11.3378 8.50332C10.2985 8.50332 9.32216 8.70016 8.40884 9.09383C7.49552 9.4875 6.69243 10.0308 5.99956 10.7236ZM1.98411 6.70817L0 4.72407C1.44871 3.24386 3.1415 2.08646 5.07837 1.25188C7.01524 0.417293 9.1017 0 11.3378 0C13.5738 0 15.6603 0.417293 17.5971 1.25188C19.534 2.08646 21.2268 3.24386 22.6755 4.72407L20.6914 6.70817C19.4789 5.49566 18.0735 4.54691 16.4752 3.86192C14.8769 3.17693 13.1644 2.83444 11.3378 2.83444C9.51112 2.83444 7.79865 3.17693 6.20034 3.86192C4.60203 4.54691 3.19662 5.49566 1.98411 6.70817Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2">Connectivity</p>
+                        </div>
+                        <!-- card-title -->
+                        <h4 class="font-semibold text-[#FAFAFA] text-sm">High speed Wifi</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- amenities and tech -->
+        <section id="highlights-section"
+            class="bg-linear-to-r from-[#000000] to-[#150723] to-100% px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <!-- section title -->
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold lg-ml-0 lg:w-[800px]">Amenities
+                    & Tech
+                </h3>
+                <!-- flex container of cards -->
+                <div class="flex flex-col items-center sm:flex-row sm:justify-center flex-wrap gap-4 items-stretch">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="15" height="15" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.2083 17C8.99306 17 7.96007 16.5868 7.10937 15.7604C6.25868 14.934 5.83333 13.9306 5.83333 12.75V4.25C5.83333 3.06944 6.25868 2.06597 7.10937 1.23958C7.96007 0.413194 8.99306 0 10.2083 0C11.4236 0 12.4566 0.413194 13.3073 1.23958C14.158 2.06597 14.5833 3.06944 14.5833 4.25V12.75C14.5833 13.9306 14.158 14.934 13.3073 15.7604C12.4566 16.5868 11.4236 17 10.2083 17ZM8.75 26.9167V22.5604C6.22222 22.2299 4.13194 21.1319 2.47917 19.2667C0.826389 17.4014 0 15.2292 0 12.75H2.91667C2.91667 14.7097 3.6276 16.3802 5.04948 17.7615C6.47135 19.1427 8.19097 19.8333 10.2083 19.8333C12.2257 19.8333 13.9453 19.1427 15.3672 17.7615C16.7891 16.3802 17.5 14.7097 17.5 12.75H20.4167C20.4167 15.2292 19.5903 17.4014 17.9375 19.2667C16.2847 21.1319 14.1944 22.2299 11.6667 22.5604V26.9167H8.75ZM10.2083 14.1667C10.6215 14.1667 10.9679 14.0309 11.2474 13.7594C11.5269 13.4878 11.6667 13.1514 11.6667 12.75V4.25C11.6667 3.84861 11.5269 3.51215 11.2474 3.24062C10.9679 2.9691 10.6215 2.83333 10.2083 2.83333C9.79514 2.83333 9.44878 2.9691 9.16927 3.24062C8.88976 3.51215 8.75 3.84861 8.75 4.25V12.75C8.75 13.1514 8.88976 13.4878 9.16927 13.7594C9.44878 14.0309 9.79514 14.1667 10.2083 14.1667Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-sm text-normal px-2">Audio</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list"
+                            class="px-1 py-3 text-[#FFF0F0] text-xs font-normal list-inside leading-6 list-disc">
+                            <li>2× Dynamic stage mics + stands</li>
+                            <li>2× Lavalier options (on request)</li>
+                            <li>Mixer + basic EQ</li>
+                        </ul>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="15" height="15" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+
+                                <path
+                                    d="M3.39286 13.5714H14.7024L10.8006 8.48214L8.1994 11.875L6.44643 9.6131L3.39286 13.5714ZM2.2619 18.0952C1.63988 18.0952 1.10739 17.8738 0.664435 17.4308C0.221478 16.9878 0 16.4554 0 15.8333V2.2619C0 1.63988 0.221478 1.10739 0.664435 0.664435C1.10739 0.221478 1.63988 0 2.2619 0H15.8333C16.4554 0 16.9878 0.221478 17.4308 0.664435C17.8738 1.10739 18.0952 1.63988 18.0952 2.2619V7.35119L22.619 2.82738V15.2679L18.0952 10.744V15.8333C18.0952 16.4554 17.8738 16.9878 17.4308 17.4308C16.9878 17.8738 16.4554 18.0952 15.8333 18.0952H2.2619ZM2.2619 15.8333H15.8333V2.2619H2.2619V15.8333Z"
+                                    fill="#E3E3E3" />
+
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-sm text-normal px-2">Video</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list"
+                            class="px-1 py-3 text-[#FFF0F0] text-xs font-normal list-inside leading-6 list-disc">
+                            <li>2× 4K cameras (tripod mounted)</li>
+                            <li>Multi‑angle capture</li>
+                            <li>On‑site operator (add‑on)</li>
+                        </ul>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:w-2xs p-4 inset-shadow-[3.17px_4.23px_4.23px_#716F6F40] shadow-[4.23px_4.23px_5.7px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center sm:justify-start">
+                            <!-- svg -->
+                            <svg width="24" height="21" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.16667 13.3333C3.70833 13.3333 3.31597 13.1701 2.98958 12.8437C2.66319 12.5174 2.5 12.125 2.5 11.6667V10.625C1.70833 10.0833 1.09375 9.38889 0.65625 8.54167C0.21875 7.69444 0 6.79167 0 5.83333C0 4.20833 0.565972 2.82986 1.69792 1.69792C2.82986 0.565972 4.20833 0 5.83333 0C7.45833 0 8.83681 0.565972 9.96875 1.69792C11.1007 2.82986 11.6667 4.20833 11.6667 5.83333C11.6667 6.79167 11.4479 7.69097 11.0104 8.53125C10.5729 9.37153 9.95833 10.0694 9.16667 10.625V11.6667C9.16667 12.125 9.00347 12.5174 8.67708 12.8437C8.35069 13.1701 7.95833 13.3333 7.5 13.3333H4.16667ZM4.16667 11.6667H7.5V9.75L8.20833 9.25C8.77778 8.86111 9.21875 8.36458 9.53125 7.76042C9.84375 7.15625 10 6.51389 10 5.83333C10 4.68056 9.59375 3.69792 8.78125 2.88542C7.96875 2.07292 6.98611 1.66667 5.83333 1.66667C4.68056 1.66667 3.69792 2.07292 2.88542 2.88542C2.07292 3.69792 1.66667 4.68056 1.66667 5.83333C1.66667 6.51389 1.82292 7.15625 2.13542 7.76042C2.44792 8.36458 2.88889 8.86111 3.45833 9.25L4.16667 9.75V11.6667ZM4.16667 16.6667C3.93056 16.6667 3.73264 16.5868 3.57292 16.4271C3.41319 16.2674 3.33333 16.0694 3.33333 15.8333V15H8.33333V15.8333C8.33333 16.0694 8.25347 16.2674 8.09375 16.4271C7.93403 16.5868 7.73611 16.6667 7.5 16.6667H4.16667Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-sm text-normal px-2">Lighting & Comfort</p>
+                        </div>
+                        <!-- list -->
+                        <ul role="list"
+                            class="px-1 py-3 text-[#FFF0F0] text-xs font-normal list-inside leading-6 list-disc">
+                            <li>4× Studio lights + stands</li>
+                            <li>AC + ventilation </li>
+                            <li>Green room + restroom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- amenities-and-tech-highlights -->
+            <div
+                class="flex justify-center flex-wrap lg:justify-start gap-2 sm:gap-8 text-xs text-[#CDCDCD] py-6 lg:w-[800px] mx-auto">
+                <!-- flex-item-1 -->
+                <div
+                    class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                    <svg width="12" height="12" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 15C4.2625 14.5625 2.82812 13.5656 1.69688 12.0094C0.565625 10.4531 0 8.725 0 6.825V2.25L6 0L12 2.25V6.825C12 8.725 11.4344 10.4531 10.3031 12.0094C9.17188 13.5656 7.7375 14.5625 6 15ZM6 13.425C7.3 13.0125 8.375 12.1875 9.225 10.95C10.075 9.7125 10.5 8.3375 10.5 6.825V3.28125L6 1.59375L1.5 3.28125V6.825C1.5 8.3375 1.925 9.7125 2.775 10.95C3.625 12.1875 4.7 13.0125 6 13.425ZM4.5 10.5H7.5C7.7125 10.5 7.89063 10.4281 8.03438 10.2844C8.17813 10.1406 8.25 9.9625 8.25 9.75V7.5C8.25 7.2875 8.17813 7.10938 8.03438 6.96563C7.89063 6.82188 7.7125 6.75 7.5 6.75V6C7.5 5.5875 7.35313 5.23438 7.05938 4.94063C6.76563 4.64688 6.4125 4.5 6 4.5C5.5875 4.5 5.23438 4.64688 4.94063 4.94063C4.64688 5.23438 4.5 5.5875 4.5 6V6.75C4.2875 6.75 4.10938 6.82188 3.96563 6.96563C3.82188 7.10938 3.75 7.2875 3.75 7.5V9.75C3.75 9.9625 3.82188 10.1406 3.96563 10.2844C4.10938 10.4281 4.2875 10.5 4.5 10.5ZM5.25 6.75V6C5.25 5.7875 5.32188 5.60938 5.46563 5.46563C5.60938 5.32188 5.7875 5.25 6 5.25C6.2125 5.25 6.39063 5.32188 6.53438 5.46563C6.67813 5.60938 6.75 5.7875 6.75 6V6.75H5.25Z"
+                            fill="#E3E3E3" />
+                    </svg>
+                    <p>HR‑safe shows possible</p>
+                </div>
+                <!-- flex-item-2 -->
+                <div
+                    class="flex items-center space-x-2 border p-1 border-[#7C7676] rounded-md inset-shadow-[3.49px_4.66px_4.66px_#716F6F40]">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 13.5C2.175 13.5 1.46875 13.2063 0.88125 12.6188C0.29375 12.0312 0 11.325 0 10.5C0 9.675 0.29375 8.96875 0.88125 8.38125C1.46875 7.79375 2.175 7.5 3 7.5C3.2875 7.5 3.55313 7.53438 3.79688 7.60313C4.04063 7.67188 4.275 7.775 4.5 7.9125V0H9V3H6V10.5C6 11.325 5.70625 12.0312 5.11875 12.6188C4.53125 13.2063 3.825 13.5 3 13.5Z"
+                            fill="#E3E3E3" />
+                    </svg>
+                    <p>Music‑ready acoustics</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- packages and pricing section -->
+        <section id="packages-and-pricing-section"
+            class="bg-radial from-[#250C4E] from-0% via-[#220B48] via-14% to-[#000000] to-100% px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <!-- section title -->
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold lg-ml-0 lg:w-[800px]">Packages
+                    and Pricing
+                </h3>
+                <!-- flex container of cards -->
+                <div class="flex flex-col items-center sm:flex-row sm:justify-center flex-wrap gap-4 items-stretch">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:w-2xs p-4 inset-shadow-[2.95px_3.93px_3.93px_#716F6F1A] shadow-[3.93px_3.93px_5.31px_#716F6F33] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- highlight -->
+                        <p class="text-xs text-normal px-2">Basic Slot</p>
+                        <!-- card-title -->
+                        <h4 class="font-bold px-2 text-[#FAFAFA] text-xl pb-0.5">₹4,999</h4>
+                        <!-- description -->
+                        <p class="px-1 py-3 text-[#FFF0F0] text-xs font-normal">2 hours • Venue + lights • DIY setup</p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#75A7F2] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Enquire</a>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:w-2xs p-4 inset-shadow-[2.95px_3.93px_3.93px_#716F6F1A] shadow-[3.93px_3.93px_5.31px_#716F6F33] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- highlight -->
+                        <p class="text-xs text-normal px-2">Show Night</p>
+                        <!-- card-title -->
+                        <h4 class="font-bold px-2 text-[#FAFAFA] text-xl pb-0.5">₹12,999</h4>
+                        <!-- description -->
+                        <p class="px-1 py-3 text-[#FFF0F0] text-xs font-normal">4 hours • Venue + mics + tech support
+                        </p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#EFCB00] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Book
+                            Date</a>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col space-y-2 sm:w-2xs p-4 inset-shadow-[2.95px_3.93px_3.93px_#716F6F1A] shadow-[3.93px_3.93px_5.31px_#716F6F33] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- highlight -->
+                        <p class="text-xs text-normal px-2">Production Day</p>
+                        <!-- card-title -->
+                        <h4 class="font-bold px-2 text-[#FAFAFA] text-xl pb-0.5">₹19,999</h4>
+                        <!-- description -->
+                        <p class="px-1 py-3 text-[#FFF0F0] text-xs font-normal">6 hours • Dual 4K capture • Crew add‑ons
+                        </p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#75A7F2] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Get
+                            Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section -->
+        <section id="check-availability" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main-flex-container -->
+            <div
+                class="flex flex-col items-center gap-6 md:flex-row md:justify-around lg-ml-0 lg:w-[800px] mx-auto pb-16">
+                <!-- flex-item-1 -->
+                <div class="max-w-xl text-center mx-auto md:text-start md:mx-0">
+                    <h3 class="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold ">Check Availability</h3>
+                    <p class="max-w-3xl font-light py-3 text-[#DEDBDB]">
+                        Share three preferred slots and we’ll confirm within 24 hours.
+                    </p>
+                </div>
+                <!-- flex-item-2 button -->
+                <a href="https://drive.google.com/file/d/1-dEVJ8U3L09YReHxWHXnBqwJ0jK_6Z3n/view?usp=sharing"
+                    target="_blank"
+                    class="flex space-x-2 items-center bg-[#7C31F4] px-2.5 py-2.5 rounded-md font-medium text-[#FFFFFF] max-md:text-xs shadow-[0_3.7px_3.7px_#FFFFFF40]">
+                    <svg width="20" height="20" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.5743 23.8037L6.40588 18.6353L8.51691 16.5243L11.5743 19.5816L17.689 13.4669L19.8 15.5779L11.5743 23.8037ZM2.91176 29.1176C2.11103 29.1176 1.42555 28.8325 0.855331 28.2623C0.28511 27.6921 0 27.0066 0 26.2059V5.82353C0 5.02279 0.28511 4.33732 0.855331 3.7671C1.42555 3.19687 2.11103 2.91176 2.91176 2.91176H4.36765V0H7.27941V2.91176H18.9265V0H21.8382V2.91176H23.2941C24.0949 2.91176 24.7803 3.19687 25.3506 3.7671C25.9208 4.33732 26.2059 5.02279 26.2059 5.82353V26.2059C26.2059 27.0066 25.9208 27.6921 25.3506 28.2623C24.7803 28.8325 24.0949 29.1176 23.2941 29.1176H2.91176ZM2.91176 26.2059H23.2941V11.6471H2.91176V26.2059ZM2.91176 8.73529H23.2941V5.82353H2.91176V8.73529Z"
+                            fill="#E3E3E3" />
+                    </svg>
+                    <span>Request Dates</span></a>
+            </div>
+        </section>
+
+        <!-- photo-gallery section -->
+        <section id="photo-gallery-section"
+            class="bg-conic-139 from-[#1D0E01] from-11% via-[#100522] via-23% via-[#310C3C] via-40% via-[#000000] via-53% to-[#0D051C] to-81% px-1 md:px-3 lg:px-17">
+            <div class="flex flex-col justify-center items-center pt-14 pb-16">
+                <h2 class="text-xl md:text-2xl lg:text-3xl text-[#E3E3E3] font-bold">Studio Glimpse</h2>
+                <p class="text-[#D3D3D3] font-medium max-w-5xl text-center my-9 max-sm:text-sm">
+                    A look inside our creative space—built for laughter, lights, and moments that shine. Perfect for
+                    artists, brands, and creators to produce professional-quality content in a lively environment.
+                </p>
+                <!-- grid main-container of studio pics -->
+                <div class="grid gap-2 place-items-stretch md:grid-cols-5">
+                    <!-- pic-1 -->
+                    <img class="md:col-span-3 rounded" src="../assets/images/studio-rental/pic-1.png" alt="pic-1">
+
+                    <!-- grid sub-container-1 of studio pics -->
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2 max-md:order-last place-items-stretch md:col-span-2">
+                        <!-- pic-2 -->
+                        <img class="rounded" src="../assets/images/studio-rental/pic-2.png" alt="pic-2">
+                        <!-- pic-3 -->
+                        <img class="row-span-2 rounded" src="../assets/images/studio-rental/pic-3.png" alt="pic-3">
+                        <!-- pic-4 -->
+                        <img class="rounded" src="../assets/images/studio-rental/pic-4.png" alt="pic-4">
+                    </div>
+
+                    <!-- grid sub-container-2 of studio pics -->
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2 place-items-stretch md:col-span-2">
+                        <!-- pic-5 -->
+                        <img class="rounded" src="../assets/images/studio-rental/pic-5.png" alt="pic-5">
+                        <!-- pic-6 -->
+                        <img class="rounded" src="../assets/images/studio-rental/pic-6.png" alt="pic-6">
+                        <!-- pic-7 -->
+                        <img class="rounded" src="../assets/images/studio-rental/pic-7.png" alt="pic-7">
+                        <!-- pic-8 -->
+                        <img class="rounded" src="../assets/images/studio-rental/pic-8.png" alt="pic-8">
+                    </div>
+
+                    <!-- studio-pic-9 -->
+                    <img class="md:col-span-3 rounded" src="../assets/images/studio-rental/pic-9.png" alt="pic-9">
+                </div>
+        </section>
+
+        <!-- faqs section -->
+        <section id="faqs-section" class="bg-[#000000] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 max-w-[1300px] mx-auto text-white">
+                <!-- section title -->
+                <h3
+                    class="text-xl max-w-xl md:text-2xl lg:text-3xl text-[#EDEDED] font-semibold pb-6 text-center mx-auto md:text-start md:mx-0">
+                    FAQs</h3>
+                <!-- faqs-cards -->
+                <!-- grid container of cards -->
+                <div
+                    class="max-sm:text-xs grid gap-10 lg:grid-cols-2 md:gap-4 xl:gap-8 place-content-center justify-items-stretch auto-rows-fr">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 text-[#A2A1A1] text-sm uppercase">Do you allow outside
+                            food/catering?</h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">Yes. Light catering is allowed. Keep the stage
+                            and aisles clear.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 text-[#A2A1A1] text-sm uppercase">Can I record my show/podcast?
+                        </h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">Yes. We offer add‑on crew for dual‑camera
+                            capture and clean audio.</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 text-[#A2A1A1] text-sm uppercase">What’s the cancellation policy?
+                        </h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">100% refund if cancelled 7 days prior; 50%
+                            within 3–6 days; no refund within 48 hours.</p>
+                    </div>
+                    <!-- card-4 -->
+                    <div
+                        class="flex flex-col max-w-sm md:max-w-xl max-sm:p-0.5 px-6 py-6 space-x-3 inset-shadow-[1px_1px_1px_#716F6F40] shadow-[1px_1px_1px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <h4 class="font-semibold p-1 text-[#A2A1A1] text-sm uppercase">Is the content HR‑safe for
+                            corporate shows?</h4>
+                        <p class="text-xs font-normal p-1 text-[#FFFFFF]">We curate clean sets for corporate events and
+                            can share samples in advance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ready to lock your date section -->
+        <section id="lock-your-date-section" class="bg-linear-to-bl from-[#000000] to-[#7D27CE] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div
+                class="flex flex-col justify-center items-center lg:flex-row lg:justify-around space-y-12 lg:space-x-6 py-16">
+                <!-- plan c-t-a -->
+                <div class="flex flex-col justify-center items-center lg:items-start w-full md:max-w-[500px]">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl text-[#E7E5E5] font-semibold max-md:text-center">Ready to lock your date?</h2>
+                    <p class="max-w-5xl font-light pt-3 pb-6 max-lg:text-center">
+                        Tell us about your event. We’ll suggest the best slot and package within your budget.
+                    </p>
+                    <!-- sub-flex container of buttons -->
+                    <div class="flex max-sm:flex-col max-sm:space-y-8 max-sm:space-x-0 space-x-10">
+                        <a href="#" target="_blank"
+                            class="bg-[#EFCB00] px-6 py-2.5 rounded-md font-medium text-[#000000] max-md:text-xs cursor-pointer">Enquire
+                            Now</a>
+                        <a href="#" target="_blank"
+                            class="bg-[#7C31F4] px-6 py-2.5 rounded-md font-medium text-[#FFFFFF] max-md:text-xs cursor-pointer">Request
+                            Callback</a>
+                    </div>
+                </div>
+                <!-- contact information -->
+                <div class="grid xl:grid-cols-2 gap-8 p-5 rounded-[20px] bg-[#3B3A3A66] lg:max-w-[700px]">
+                    <!-- call -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">CALL / WHATSAPP</span>
+                        <a href="tel:+91 98765 43210" class="font-semibold" target="_blank">+91 98765
+                            43210</a>
+                    </div>
+                    <!-- mail -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">MAIL</span>
+                        <a href="mailto:admin@laughandvibe.com" target="_blank"
+                            class="font-semibold">admin@laughandvibe.com</a>
+                    </div>
+                    <!-- location -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">STUDIO LOCATION</span>
+                        <a href="https://www.google.com/maps/place/Laugh+and+Vibe+Club/@18.5011468,73.9242248,15z/data=!4m8!3m7!1s0x3bc2c11b7825bd91:0x561f72d585981e9f!8m2!3d18.5407657!4d73.8850219!9m1!1b1!16s%2Fg%2F11m64rdz73?authuser=2&entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer" loading="lazy" class="font-semibold">
+                            Laugh & Vibe Club, Koregaon Park, Pune
+                        </a>
+                    </div>
+                    <!-- social -->
+                    <div class="text-[#E9E9E9] flex flex-col font-medium text-xs">
+                        <span class="text-[#CBC6C6]">Turnaround</span>
+                        <p class="font-semibold">48–72 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer
+        class="max-w-[1600px] mx-auto bg-[#3A3A3A] py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full text-sm flex flex-col justify-center items-center">
+        <h6 class="text-[#EAEAEA] font-semibold text-center">© 2025 Laugh & Vibe. All rights reserved.</h6>
+        <p class="text-[#9A9292] text-xs font-semibold text-center">Comedy • Music • Corporate • Private Events</p>
+    </footer>
+</body>
+
+</html>
