@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laugh and Vibe</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-[#FFEFEF] font-poppins scroll-smooth">
+    <!-- header -->
+    <header class="max-w-[1600px] mx-auto bg-black py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full">
+        <!-- header-main-flex container -->
+        <div class=" flex flex-col items-center lg:flex-row justify-between">
+            <!-- input -->
+            <input class="hidden peer" type="checkbox" name="menu-checkbox" id="menu-checkbox"
+                area-labelledby="hamburger-icon close-icon">
+            <!-- logo -->
+            <div class="flex items-center w-full lg:w-fit ">
+                <a href="../index.html#"
+                    class="flex items-center lg:w-fit max-lg:py-1 lg:flex-col lg:items-start xl:flex-row xl:items-center">
+                    <img src="../assets/images/home/logo.png" alt="laugh-and-vibe-logo" class="size-14">
+                    <span class="hidden md:block pl-4 text-xs lg:pl-0 xl:pl-4">Laugh and Vibe</span>
+                </a>
+            </div>
+
+            <!-- labels for input -->
+            <label id="hamburger-icon"
+                class="peer-checked:hidden absolute top-4 right-3 transition-all duration-300 ease-in-out lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+            </label>
+            <label id="close-icon"
+                class="hidden peer-checked:block absolute top-4 right-3 transition-all duration-300 ease-in-out lg:peer-checked:hidden lg:hidden"
+                for="menu-checkbox">
+                <svg class="cursor-pointer" xmlns="http://www .w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFEFEF">
+                    <path
+                        d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                </svg>
+            </label>
+
+            <!-- nav links -->
+            <nav
+                class="flex flex-col w-full lg:w-fit divide-y divide-gray-600 lg:divide-y-0 lg:flex-row space-x-2.5 xl:space-x-4 2xl:space-x-8 text-xs flex-wrap max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[600px] transition-all duration-300 ease-in-out">
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-t border-gray-600">
+                    <a class="" href="../index.html#">Home</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="#">About</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#our-services-section">Service</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./shows.html">Shows</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./for-corporates.html">For Corporates</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./for-colleges.html">For Colleges</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./artists.html">Artists</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="../index.html#inside-the-room">Gallery</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center">
+                    <a href="./studio-rental.html">Studio Rental</a>
+                </div>
+                <div class="w-full lg:w-fit py-4 text-center max-lg:border-b border-gray-600">
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+
+            <!-- book tickets button -->
+            <div
+                class="max-lg:max-h-0 max-lg:overflow-hidden max-lg:peer-checked:max-h-[100px] max-lg:peer-checked:my-6 transition-all duration-300 ease-in-out rounded">
+                <a href="https://linktr.ee/laughandvibe" target="_blank"
+                    class="flex justify-center p-3 bg-linear-to-r from-[#9049D3] via-28% via-[#CE5573] via-65% via-[#F35D23] to-[#FFC310] to-100% text-black text-xs text-center rounded-xl lg:my-0">
+                    Book Tickets
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="max-w-[1600px] mx-auto w-full">
+        <!-- about-us-hero-section -->
+        <section id="about-us-hero-section"
+            class="bg-linear-to-bl from-[#000000] to-[#7D27CE] to-100% px-1 md:px-3 lg:px-17">
+            <!-- hero-section main-flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-6">
+                <h1 class="text-xl md:text-2xl lg:text-3xl text-[#E4E4E4] font-semibold">About Laugh & Vibe</h1>
+                <p class="text-[#DEDBDB] font-medium max-w-3xl text-center max-sm:text-sm">
+                    A creative playground for comedy, music, and unforgettable moments. We blend entertainment and
+                    connection to create experiences that feel alive.
+                </p>
+            </div>
+        </section>
+
+        <!-- our story section -->
+        <section id="our-story-section" class="bg-linear-to-r from-[#000000] to-[#150723] px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center md:flex-row md:justify-start gap-2 py-16">
+                <!-- sub-flex container -->
+                <div class="flex flex-col justify-center items-center gap-1 md:items-start w-full md:w-[50%]">
+                    <!-- section title -->
+                    <h2 class="text-base md:text-2xl text-white font-semibold max-sm:text-center pb-6">Our
+                        Story</h2>
+                    <!-- paragraph-1 -->
+                    <p class="max-w-full font-light pt-3 pb-6 max-sm:text-center text-white max-sm:text-sm text-base">
+                        Laugh & Vibe started with a simple idea: create a space where people can walk in stressed and
+                        walk out lighter. From indie shows in cafés to a full-fledged 50-seater studio in Koregaon Park,
+                        we’ve grown into a home for artists, creators, and audiences who love live performance.
+                    </p>
+                    <!-- paragraph-2 -->
+                    <p class="max-w-full font-light pt-3 pb-6 max-sm:text-center text-white max-sm:text-sm text-base">
+                        Today, we host weekend comedy shows, corporate entertainment, music gigs, and private events —
+                        keeping the vibe authentic, welcoming, and full of energy.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- highlights section -->
+        <section id="highlights-section" class="bg-linear-to-r from-[#000000] to-[#150723] px-1 md:px-3 lg:px-17">
+            <!-- main flex-container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <!-- section title -->
+                <h3 class="text-base md:text-2xl text-[#EDEDED] text-center font-semibold">What We Stand For
+                </h3>
+                <!-- flex container of cards -->
+                <div class="flex flex-col items-center gap-8 sm:flex-row sm:justify-center flex-wrap items-stretch">
+                    <!-- card-1 -->
+                    <div
+                        class="flex flex-col space-y-2 text-center max-sm:max-w-xs sm:w-xs p-6 inset-shadow-[4.74px_6.32px_6.32px_#716F6F40] shadow-[6.32px_6.32px_8.53px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center">
+                            <!-- svg -->
+                            <svg width="15" height="15" viewBox="0 0 26 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 18.0933V14.927C0 14.2862 0.164913 13.6972 0.49474 13.1601C0.824566 12.6229 1.26276 12.213 1.80933 11.9303C2.97786 11.346 4.16524 10.9078 5.37146 10.6157C6.57768 10.3236 7.80275 10.1775 9.04667 10.1775C10.2906 10.1775 11.5157 10.3236 12.7219 10.6157C13.9281 10.9078 15.1155 11.346 16.284 11.9303C16.8306 12.213 17.2688 12.6229 17.5986 13.1601C17.9284 13.6972 18.0933 14.2862 18.0933 14.927V18.0933H0ZM20.355 18.0933V14.7008C20.355 13.8716 20.1241 13.0753 19.6624 12.3119C19.2006 11.5486 18.5457 10.8937 17.6975 10.3471C18.6587 10.4602 19.5634 10.6534 20.4115 10.9267C21.2597 11.2 22.0512 11.5345 22.7863 11.9303C23.4648 12.3072 23.9831 12.7266 24.3412 13.1883C24.6993 13.6501 24.8783 14.1543 24.8783 14.7008V18.0933H20.355ZM9.04667 9.04667C7.80275 9.04667 6.73788 8.60376 5.85206 7.71794C4.96624 6.83212 4.52333 5.76725 4.52333 4.52333C4.52333 3.27942 4.96624 2.21455 5.85206 1.32873C6.73788 0.44291 7.80275 0 9.04667 0C10.2906 0 11.3555 0.44291 12.2413 1.32873C13.1271 2.21455 13.57 3.27942 13.57 4.52333C13.57 5.76725 13.1271 6.83212 12.2413 7.71794C11.3555 8.60376 10.2906 9.04667 9.04667 9.04667ZM20.355 4.52333C20.355 5.76725 19.9121 6.83212 19.0263 7.71794C18.1404 8.60376 17.0756 9.04667 15.8317 9.04667C15.6243 9.04667 15.3605 9.02311 15.0401 8.97599C14.7197 8.92887 14.4558 8.87704 14.2485 8.8205C14.7574 8.21739 15.1485 7.54831 15.4217 6.81327C15.695 6.07823 15.8317 5.31492 15.8317 4.52333C15.8317 3.73175 15.695 2.96844 15.4217 2.2334C15.1485 1.49835 14.7574 0.829278 14.2485 0.226167C14.5124 0.131931 14.7762 0.0706771 15.0401 0.0424062C15.3039 0.0141354 15.5678 0 15.8317 0C17.0756 0 18.1404 0.44291 19.0263 1.32873C19.9121 2.21455 20.355 3.27942 20.355 4.52333ZM2.26167 15.8317H15.8317V14.927C15.8317 14.7197 15.7798 14.5312 15.6762 14.3616C15.5725 14.192 15.4359 14.06 15.2662 13.9658C14.2485 13.4569 13.2213 13.0753 12.1847 12.8208C11.1481 12.5664 10.1021 12.4392 9.04667 12.4392C7.99122 12.4392 6.9452 12.5664 5.9086 12.8208C4.87201 13.0753 3.84483 13.4569 2.82708 13.9658C2.65746 14.06 2.52082 14.192 2.41716 14.3616C2.3135 14.5312 2.26167 14.7197 2.26167 14.927V15.8317ZM9.04667 6.785C9.66862 6.785 10.2011 6.56354 10.644 6.12064C11.0869 5.67773 11.3083 5.14529 11.3083 4.52333C11.3083 3.90137 11.0869 3.36894 10.644 2.92603C10.2011 2.48312 9.66862 2.26167 9.04667 2.26167C8.42471 2.26167 7.89227 2.48312 7.44936 2.92603C7.00645 3.36894 6.785 3.90137 6.785 4.52333C6.785 5.14529 7.00645 5.67773 7.44936 6.12064C7.89227 6.56354 8.42471 6.785 9.04667 6.785Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2 text-[#FFFFFF]">Community</p>
+                        </div>
+                        <!-- card-desc -->
+                        <p class="text-xs text-normal px-2 text-[#FFF0F0]">A safe, vibrant space where artists and
+                            audiences feel welcomed.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex flex-col space-y-2 text-center max-sm:max-w-xs sm:w-xs p-6 inset-shadow-[4.74px_6.32px_6.32px_#716F6F40] shadow-[6.32px_6.32px_8.53px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center">
+                            <!-- svg -->
+                            <svg width="15" height="15" viewBox="0 0 26 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.91667 13.5714C6.97421 13.5714 6.17312 13.2416 5.51339 12.5818C4.85367 11.9221 4.52381 11.121 4.52381 10.1786V3.39286C4.52381 2.4504 4.85367 1.64931 5.51339 0.989583C6.17312 0.329861 6.97421 0 7.91667 0C8.85913 0 9.66022 0.329861 10.3199 0.989583C10.9797 1.64931 11.3095 2.4504 11.3095 3.39286V10.1786C11.3095 11.121 10.9797 11.9221 10.3199 12.5818C9.66022 13.2416 8.85913 13.5714 7.91667 13.5714ZM6.78571 21.4881V18.0104C4.8254 17.7465 3.20437 16.87 1.92262 15.381C0.640873 13.8919 0 12.1577 0 10.1786H2.2619C2.2619 11.7431 2.81324 13.0766 3.91592 14.1793C5.0186 15.282 6.35218 15.8333 7.91667 15.8333C9.48115 15.8333 10.8147 15.282 11.9174 14.1793C13.0201 13.0766 13.5714 11.7431 13.5714 10.1786H15.8333C15.8333 12.1577 15.1925 13.8919 13.9107 15.381C12.629 16.87 11.0079 17.7465 9.04762 18.0104V21.4881H6.78571ZM7.91667 11.3095C8.2371 11.3095 8.5057 11.2011 8.72247 10.9844C8.93924 10.7676 9.04762 10.499 9.04762 10.1786V3.39286C9.04762 3.07242 8.93924 2.80382 8.72247 2.58705C8.5057 2.37029 8.2371 2.2619 7.91667 2.2619C7.59623 2.2619 7.32763 2.37029 7.11086 2.58705C6.8941 2.80382 6.78571 3.07242 6.78571 3.39286V10.1786C6.78571 10.499 6.8941 10.7676 7.11086 10.9844C7.32763 11.2011 7.59623 11.3095 7.91667 11.3095Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2 text-[#FFFFFF]">Expression</p>
+                        </div>
+                        <!-- card-desc -->
+                        <p class="text-xs text-normal px-2 text-[#FFF0F0]">A stage where comedy, music, poetry, and
+                            ideas take shape.</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex flex-col space-y-2 text-center max-sm:max-w-xs sm:w-xs p-6 inset-shadow-[4.74px_6.32px_6.32px_#716F6F40] shadow-[6.32px_6.32px_8.53px_#716F6F80] bg-[#3B3A3A66] rounded-2xl">
+                        <!-- icon-div -->
+                        <div class="flex justify-center items-center">
+                            <!-- svg -->
+                            <svg width="15" height="15" viewBox="0 0 26 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.3083 20.7508L9.66862 19.2807C7.76506 17.5656 6.19131 16.0861 4.9474 14.8422C3.70348 13.5983 2.714 12.4816 1.97896 11.4921C1.24392 10.5026 0.73033 9.59324 0.438198 8.76396C0.146066 7.93468 0 7.08656 0 6.21958C0 4.44794 0.593687 2.96844 1.78106 1.78106C2.96844 0.593687 4.44794 0 6.21958 0C7.19964 0 8.13258 0.207319 9.0184 0.621958C9.90421 1.0366 10.6675 1.62086 11.3083 2.37475C11.9491 1.62086 12.7125 1.0366 13.5983 0.621958C14.4841 0.207319 15.417 0 16.3971 0C18.1687 0 19.6482 0.593687 20.8356 1.78106C22.023 2.96844 22.6167 4.44794 22.6167 6.21958C22.6167 7.08656 22.4706 7.93468 22.1785 8.76396C21.8863 9.59324 21.3727 10.5026 20.6377 11.4921C19.9027 12.4816 18.9132 13.5983 17.6693 14.8422C16.4254 16.0861 14.8516 17.5656 12.948 19.2807L11.3083 20.7508ZM11.3083 17.6975C13.1177 16.0767 14.6066 14.6867 15.7751 13.5276C16.9437 12.3685 17.8672 11.3602 18.5457 10.5026C19.2242 9.64507 19.6953 8.88175 19.9592 8.21268C20.2231 7.5436 20.355 6.87924 20.355 6.21958C20.355 5.08875 19.9781 4.14639 19.2242 3.3925C18.4703 2.63861 17.5279 2.26167 16.3971 2.26167C15.5113 2.26167 14.6914 2.51139 13.9375 3.01084C13.1836 3.5103 12.6653 4.14639 12.3826 4.91913H10.234C9.95133 4.14639 9.43303 3.5103 8.67915 3.01084C7.92526 2.51139 7.1054 2.26167 6.21958 2.26167C5.08875 2.26167 4.14639 2.63861 3.3925 3.3925C2.63861 4.14639 2.26167 5.08875 2.26167 6.21958C2.26167 6.87924 2.3936 7.5436 2.65746 8.21268C2.92132 8.88175 3.3925 9.64507 4.071 10.5026C4.7495 11.3602 5.67301 12.3685 6.84154 13.5276C8.01007 14.6867 9.499 16.0767 11.3083 17.6975Z"
+                                    fill="#E3E3E3" />
+                            </svg>
+                            <!-- highlight -->
+                            <p class="text-xs text-normal px-2 text-[#FFFFFF]">Connection</p>
+                        </div>
+                        <!-- card-desc -->
+                        <p class="text-xs text-normal px-2 text-[#FFF0F0]">Moments that bring people together — raw,
+                            real, and memorable..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our team section -->
+        <section id="our-team-section"
+            class="bg-radial from-[#250C4E] from-0% via-[#220B48] via-14% to-[#000000] to-100% px-1 md:px-3 lg:px-17">
+            <!-- main flex container -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-10">
+                <h3 class="text-base md:text-2xl lg:text-3xl text-[#E7E5E5] font-semibold">Our Team</h3>
+                <!-- grid container of cards -->
+                <div class="grid gap-6 min-[900px]:grid-cols-2 min-[900px]:gap-20">
+                    <!-- card-1 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-4 px-4 py-4 inset-shadow-[3.55px_4.74px_4.74px_#716F6F1A] shadow-[4.74px_4.74px_6.4px_#716F6F33] bg-[#3B3A3A66] rounded-[20px] text-[#B1AFAF] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col gap-2">
+                            <!-- profile-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/icons/img-placeholder.svg"
+                                alt="img-placeholder.svg">
+                            <!-- name, role -->
+                            <h5 class="font-normal px-2 text-[#D9D9D9] md:text-base">Bhushan Gaikwad — Founder</h5>
+                        </div>
+                        <!-- description -->
+                        <p class="p-1 text-white">
+                            The driving force behind Laugh & Vibe. Bhushan curates the lineups, sets the tone for the
+                            brand, and brings his comedic energy to the stage and the community.
+                        </p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#75A7F2] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Linkedin</a>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-4 px-4 py-4 inset-shadow-[3.55px_4.74px_4.74px_#716F6F1A] shadow-[4.74px_4.74px_6.4px_#716F6F33] bg-[#3B3A3A66] rounded-[20px] text-[#B1AFAF] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col gap-2">
+                            <!-- profile-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/icons/img-placeholder.svg"
+                                alt="img-placeholder.svg">
+                            <!-- name, role -->
+                            <h5 class="font-normal px-2 text-[#D9D9D9] md:text-base">Sowmiya V — Designer & Event
+                                Manager</h5>
+                        </div>
+                        <!-- description -->
+                        <p class="p-1 text-white">
+                            The mind behind the aesthetics and the smooth event flow. From visuals to backstage
+                            coordination, Sowmiya makes sure every show looks good and runs right.
+                        </p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#75A7F2] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Linkedin</a>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-4 px-4 py-4 inset-shadow-[3.55px_4.74px_4.74px_#716F6F1A] shadow-[4.74px_4.74px_6.4px_#716F6F33] bg-[#3B3A3A66] rounded-[20px] text-[#B1AFAF] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col gap-2">
+                            <!-- profile-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/icons/img-placeholder.svg"
+                                alt="img-placeholder.svg">
+                            <!-- name, role -->
+                            <h5 class="font-normal px-2 text-[#D9D9D9] md:text-base">Ratnadeep — Event Organiser</h5>
+                        </div>
+                        <!-- description -->
+                        <p class="p-1 text-white">
+                            The operations anchor. He manages on-ground execution, artist coordination, and everything
+                            that keeps each show sharp and on schedule.
+                        </p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#75A7F2] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Linkedin</a>
+                    </div>
+                    <!-- card-4 -->
+                    <div
+                        class="sm:max-w-[360px] flex flex-col space-y-2 justify-baseline max-sm:p-4 px-4 py-4 inset-shadow-[3.55px_4.74px_4.74px_#716F6F1A] shadow-[4.74px_4.74px_6.4px_#716F6F33] bg-[#3B3A3A66] rounded-[20px] text-[#B1AFAF] text-xs">
+                        <!-- profile -->
+                        <div class="flex flex-col gap-2">
+                            <!-- profile-pic -->
+                            <img class="w-16 h-16 p-1" src="../assets/icons/img-placeholder.svg"
+                                alt="img-placeholder.svg">
+                            <!-- name, role -->
+                            <h5 class="font-normal px-2 text-[#D9D9D9] md:text-base">Krutika — Web Developer</h5>
+                        </div>
+                        <!-- description -->
+                        <p class="p-1 text-white">
+                            The tech backbone of Laugh & Vibe. She ensures the website, listings, and digital
+                            experiences are fast, clean, and easy for artists and audiences.
+                        </p>
+                        <!-- button -->
+                        <a href="" target="_blank"
+                            class="max-w-20 bg-[#75A7F2] px-2 py-2 rounded-md font-medium text-[#000000] text-center text-xs">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our-vision-section -->
+        <section id="our-vision-section"
+            class="bg-linear-to-bl from-[#000000] to-[#29074A] to-100% px-1 md:px-3 lg:px-17">
+            <!-- main-flex-container our-vision-section -->
+            <div class="flex flex-col justify-center items-center py-16 space-y-4">
+                <!-- family-star-pic -->
+                <img class="w-14 h-12 p-1" src="../assets/icons/family-star-icon.svg" alt="family-star-icon.svg">
+                <!-- section title -->
+                <h3 class="text-base md:text-2xl lg:text-3xl text-[#E4E4E4] font-bold">Our Vision</h3>
+                <!-- description -->
+                <p class="text-[#DEDBDB] font-light max-w-3xl text-center max-sm:text-sm">
+                    To become India’s most loved live entertainment hub — where talent grows, audiences connect, and the
+                    vibe stays unforgettable.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer
+        class="max-w-[1600px] mx-auto bg-[#3A3A3A] py-1 px-1 md:px-3 lg:px-17 lg:py-6 font-medium w-full text-sm flex flex-col justify-center items-center">
+        <h6 class="text-[#EAEAEA] font-semibold text-center">© 2025 Laugh & Vibe. All rights reserved.</h6>
+        <p class="text-[#9A9292] text-xs font-semibold text-center">Comedy • Music • Corporate • Private Events</p>
+    </footer>
+</body>
+
+</html>
