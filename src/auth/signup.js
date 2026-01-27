@@ -29,7 +29,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   errorMsg.innerText = "";
 
-  const email = emailInput.value = document.getElementById("email").value.trim();
+  const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
   const confirm = document.getElementById("confirm-password").value;
   const termsAccepted = document.getElementById("terms").checked;
