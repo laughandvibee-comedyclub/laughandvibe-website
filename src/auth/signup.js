@@ -1,15 +1,15 @@
-const supabase = window.supabaseClient;
+const supabaseClient = window.supabaseClient;
 const errorMsg = document.getElementById("errorMsg");
 
 // -------------------------
 // AUTH STATE LISTENER
 // -------------------------
-supabase.auth.onAuthStateChange(async (event, session) => {
+supabaseClient.auth.onAuthStateChange(async (event, session) => {
   if (event !== "SIGNED_IN" || !session) return;
 
   const verified = !!session.user.email_confirmed_at;
 
-  const { data: profile } = await supabase
+  const { data: profile } = await supabaseClient
     .from("artist_profiles")
     .select("id")
     .eq("user_id", session.user.id)
@@ -44,7 +44,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
     return;
   }
 
-  const { error } = await supabase.auth.signUp({
+  const { error } = await supabaseClient.auth.signUp({
     email,
     password,
     options: {
@@ -70,7 +70,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
 // GOOGLE OAUTH
 // -------------------------
 document.getElementById("google-btn").addEventListener("click", async () => {
-  await supabase.auth.signInWithOAuth({
+  await supabaseClient.auth.signInWithOAuth({
     provider: "google",
     options: {
       redirectTo: `${location.origin}/basic-info.html`

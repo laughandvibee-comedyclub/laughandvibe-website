@@ -1,4 +1,3 @@
-
 const { SUPABASE_URL, SUPABASE_ANON_KEY } = window.ENV;
 
 // supabaseClient.js
