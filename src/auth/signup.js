@@ -69,11 +69,11 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
 // -------------------------
 // GOOGLE OAUTH
 // -------------------------
-document.getElementById("google-btn").addEventListener("click", async () => {
-  await supabaseClient.auth.signInWithOAuth({
-    provider: "google",
-    options: {
-      redirectTo: `${location.origin}/basic-info.html`
-    }
-  });
-});
+// document.getElementById("google-btn").addEventListener("click", async () => {
+//   await supabaseClient.auth.signInWithOAuth({
+//     provider: "google",
+//     options: {
+//       redirectTo: `${location.origin}/basic-info.html`
+//     }
+//   });
+// });
