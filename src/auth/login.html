@@ -140,9 +140,9 @@
                     </div>
 
                     <!-- error message -->
-                    <p id="errorMsg" class="text-xs text-red-400"></p>
+                    <p id="errorMsg" class="text-xs text-red-400 py-4"></p>
                     <!-- success message -->
-                    <p id="successMsg" class="text-xs text-emerald-300"></p>
+                    <p id="successMsg" class="text-xs text-emerald-300 py-4"></p>
 
                     <!-- form -->
                     <form id="login-form" class="w-full" action="#" method="POST">
@@ -198,9 +198,10 @@
     </footer>
 
     <!-- js -->
+     <script src="./env.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="./supabaseClient.js"></script>
-    <script src="./login.js"></script>
+    <script src="./login.js" defer></script>
 </body>
 
 </html>

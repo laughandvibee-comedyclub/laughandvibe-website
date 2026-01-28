@@ -1,11 +1,11 @@
-const supabase = window.supabaseClient;
+const supabaseClient = window.supabaseClient;
 const statusMsg = document.getElementById("statusMsg");
 const errorMsg = document.getElementById("errorMsg");
 const form = document.getElementById("basic-info-form");
 const submitBtn = document.getElementById("basic-info-btn");
 
 (async () => {
-  const { data: { session } } = await supabase.auth.getSession();
+  const { data: { session } } = await supabaseClient.auth.getSession();
 
   if (!session) {
     window.location.href = "./login.html";
@@ -14,7 +14,7 @@ const submitBtn = document.getElementById("basic-info-btn");
 
   const verified = !!session.user.email_confirmed_at;
 
-  const { data: profile } = await supabase
+  const { data: profile } = await supabaseClient
     .from("artist_profiles")
     .select("id")
     .eq("user_id", session.user.id)
@@ -35,7 +35,7 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   errorMsg.textContent = "";
 
-  const { data: { session } } = await supabase.auth.getSession();
+  const { data: { session } } = await supabaseClient.auth.getSession();
 
   if (!session || !session.user.email_confirmed_at) {
     errorMsg.textContent = "Email not verified.";
@@ -56,7 +56,7 @@ form.addEventListener("submit", async (e) => {
 
   const phone = `${countryCode}${phoneRaw}`;
 
-  const { error } = await supabase.from("artist_profiles").insert({
+  const { error } = await supabaseClient.from("artist_profiles").insert({
     user_id: session.user.id,
     full_name: name,
     phone: phone

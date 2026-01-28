@@ -1,22 +1,22 @@
-const supabase = window.supabaseClient;
+const supabaseClient = window.supabaseClient;
 const errorMsg = document.getElementById("errorMsg");
 
 /* -------------------------
    AUTH STATE LISTENER
 -------------------------- */
-supabase.auth.onAuthStateChange(async (event, session) => {
+supabaseClient.auth.onAuthStateChange(async (event, session) => {
   if (event !== "SIGNED_IN" || !session) return;
 
   // Block unverified email users
   if (!session.user.email_confirmed_at) {
     errorMsg.textContent =
       "Please verify your email before continuing.";
-    await supabase.auth.signOut();
+    await supabaseClient.auth.signOut();
     return;
   }
 
   // Check if basic info (profile) exists
-  const { data: profile } = await supabase
+  const { data: profile } = await supabaseClient
     .from("artist_profiles")
     .select("id")
     .eq("user_id", session.user.id)
@@ -41,7 +41,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
 
-  const { error } = await supabase.auth.signInWithPassword({
+  const { error } = await supabaseClient.auth.signInWithPassword({
     email,
     password
   });
@@ -54,14 +54,14 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 /* -------------------------
    GOOGLE OAUTH LOGIN
 -------------------------- */
-document.getElementById("google-btn").addEventListener("click", async () => {
-  await supabase.auth.signInWithOAuth({
-    provider: "google",
-    options: {
-      redirectTo: `${location.origin}/basic-info.html`
-    }
-  });
-});
+// document.getElementById("google-btn").addEventListener("click", async () => {
+//   await supabase.auth.signInWithOAuth({
+//     provider: "google",
+//     options: {
+//       redirectTo: `${location.origin}/basic-info.html`
+//     }
+//   });
+// });
 
 /* -------------------------
    FORGOT PASSWORD
@@ -77,7 +77,7 @@ document.getElementById("forgot-password").addEventListener("click", async () =>
     return;
   }
 
-  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+  const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
     redirectTo: `${location.origin}/reset-password.html`
   });
 
