@@ -60,7 +60,8 @@ form.addEventListener("submit", async (e) => {
     id: session.user.id, //PK
     full_name: name,
     email: session.user.email,
-    whatsapp_number: phone
+    whatsapp_number: phone,   // role is set to default -> artist in the db
+    email_verified: !!session.user.email_confirmed_at
   });
 
   if (error) {
