@@ -120,7 +120,7 @@
                         fresh.
                     </p>
                     <!-- img -->
-                    <img src="../../assets/images/auth/login-signup.png" alt="mike-stand-stool-img">
+                    <img class="hidden md:block" src="../../assets/images/auth/login-signup.png" alt="mike-stand-stool-img">
                 </div>
 
                 <!-- login form -->
@@ -139,13 +139,8 @@
                             Dancers</p>
                     </div>
 
-                    <!-- error message -->
-                    <p id="errorMsg" class="text-xs text-red-400 py-4"></p>
-                    <!-- success message -->
-                    <p id="successMsg" class="text-xs text-emerald-300 py-4"></p>
-
                     <!-- form -->
-                    <form id="login-form" class="w-full" action="#" method="POST">
+                    <form id="loginForm" class="w-full" action="#" method="POST">
                         <!-- form grid container -->
                         <div class="grid gap-6">
                             <!-- Email -->
@@ -171,21 +166,26 @@
                         <!-- Submit Button -->
                         <button type="submit"
                             class="bg-[#CCAE05] text-[#000000] font-medium px-5 py-1 mt-6 rounded-md hover:text-white hover:bg-[#7D27CE] transition duration-200 inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80] cursor-pointer"
-                            id="login-btn" name="login-btn">
+                            id="loginBtn" name="loginBtn">
                             Login
                         </button>
                     </form>
 
                     <!-- signup-page-link -->
-                    <div class="flex items-center gap-4 text-xs mt-6">
+                    <div class="flex flex-wrap items-center gap-4 text-xs mt-6 ml-0 mr-auto">
                         <p class="text-[#BEB9B9]">New Artist?</p>
                         <a href="./signup.html" class="text-[#EFCB00] hover:text-[#7C31F4]">
                             Create Account
                         </a>
                         <p class="text-[#BEB9B9]">Forgot password?</p>
-                        <button type="button" id="forgot-password"
+                        <button type="button" id="resetPasswordBtn" name="resetPasswordBtn"
                             class="text-xs text-[#7C31F4] hover:text-[#EFCB00] cursor-pointer">Reset password</button>
                     </div>
+
+                    <!-- error message -->
+                    <p id="errorMsg" class="text-xs text-red-400 py-4 ml-0 mr-auto"></p>
+                    <!-- success message -->
+                    <p id="successMsg" class="text-xs text-emerald-300 py-4 ml-0 mr-auto"></p>
                 </div>
             </div>
         </section>

@@ -1,5 +1,20 @@
 const supabaseClient = window.supabaseClient;
 const errorMsg = document.getElementById("errorMsg");
+const successMsg = document.getElementById("successMsg");
+const form = document.getElementById("signupForm");
+const signupBtn = document.getElementById("signupBtn");
+const googleBtn = document.getElementById("googleBtn");
+
+let submitting = false;
+
+// -------------------------
+// HELPERS
+// -------------------------
+function resetSubmit() {
+  submitting = false;
+  signupBtn.disabled = false;
+  signupBtn.textContent = "Create Account";
+}
 
 // -------------------------
 // AUTH STATE LISTENER
@@ -10,24 +25,29 @@ supabaseClient.auth.onAuthStateChange(async (event, session) => {
   const verified = !!session.user.email_confirmed_at;
 
   const { data: profile } = await supabaseClient
-    .from("artist_profiles")
+    .from("profiles")
     .select("id")
-    .eq("user_id", session.user.id)
+    .eq("id", session.user.id)
     .maybeSingle();
 
   if (!verified || !profile) {
-    window.location.href = "./basic-info.html";
+    window.location.replace("./basic-info.html");
   } else {
-    window.location.href = "./profile-form.html";
+    window.location.replace("./profile-form.html");
   }
 });
 
 // -------------------------
 // EMAIL SIGNUP
 // -------------------------
-document.getElementById("signup-form").addEventListener("submit", async (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  errorMsg.innerText = "";
+  if (submitting) return;
+
+  errorMsg.textContent = "";
+  submitting = true;
+  signupBtn.disabled = true;
+  signupBtn.textContent = "Creating account...";
 
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
@@ -35,20 +55,20 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
   const termsAccepted = document.getElementById("terms").checked;
 
   if (!termsAccepted) {
-    errorMsg.innerText = "You must accept Terms & Privacy Policy";
-    return;
+    errorMsg.textContent = "You must accept Terms & Privacy Policy";
+    return resetSubmit();
   }
 
   if (password !== confirm) {
-    errorMsg.innerText = "Passwords do not match";
-    return;
+    errorMsg.textContent = "Passwords do not match";
+    return resetSubmit();
   }
 
   const { error } = await supabaseClient.auth.signUp({
     email,
     password,
     options: {
-      emailRedirectTo: `${location.origin}/basic-info.html`
+      emailRedirectTo: `${location.origin}/src/auth/basic-info.html`
     }
   });
 
@@ -58,22 +78,27 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
       error.message.toLowerCase().includes("already registered") ||
       error.status === 422
     ) {
-      window.location.href = "./login.html";
+      window.location.replace("./login.html");
       return;
     }
 
     errorMsg.textContent = error.message;
+    return resetSubmit();
   }
+
+  successMsg.textContent =
+    "Account created. Please verify your email before continuing.";
+  form.reset();
 });
 
 // -------------------------
 // GOOGLE OAUTH
 // -------------------------
-// document.getElementById("google-btn").addEventListener("click", async () => {
+// googleBtn.addEventListener("click", async () => {
 //   await supabaseClient.auth.signInWithOAuth({
 //     provider: "google",
 //     options: {
-//       redirectTo: `${location.origin}/basic-info.html`
+//       redirectTo: `${location.origin}/src/auth/basic-info.html`
 //     }
 //   });
 // });

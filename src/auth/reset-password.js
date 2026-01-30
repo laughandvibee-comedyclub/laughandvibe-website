@@ -1,9 +1,22 @@
 const supabase = window.supabaseClient;
-const errorMsg = document.getElementById("errorMsg");
 
-document.getElementById("reset-password-form").addEventListener("submit", async (e) => {
+const form = document.getElementById("resetPasswordForm")
+const errorMsg = document.getElementById("errorMsg");
+const successMsg = document.getElementById("successMsg");
+const resetBtn = document.getElementById("resetBtn");
+
+let submitting = false;
+
+/* -------------------------
+   PASSWORD RESET
+-------------------------- */
+
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
+  if (submitting) return;
+
   errorMsg.textContent = "";
+  successMsg.textContent = "";
 
   const password = document.getElementById("password").value;
   const confirm = document.getElementById("confirm").value;
@@ -13,10 +26,17 @@ document.getElementById("reset-password-form").addEventListener("submit", async 
     return;
   }
 
+  submitting = true;
+  resetBtn.disabled = true;
+  resetBtn.textContent = "Updating password...";
+
   const { data: { session } } = await supabase.auth.getSession();
 
   if (!session) {
     errorMsg.textContent = "Invalid or expired reset link. Please request a new one.";
+    resetBtn.disabled = false;
+    resetBtn.textContent = "Reset Password";
+    submitting = false;
     return;
   }
 
@@ -24,8 +44,17 @@ document.getElementById("reset-password-form").addEventListener("submit", async 
 
   if (error) {
     errorMsg.textContent = error.message;
+    resetBtn.disabled = false;
+    resetBtn.textContent = "Reset Password";
+    submitting = false;
     return;
   }
 
-  window.location.href = "./login.html";
+  // Success
+  successMsg.textContent =
+    "Password updated successfully. Redirecting to login...";
+
+  setTimeout(() => {
+    window.location.replace("./login.html");
+  }, 1500);
 });

@@ -1,27 +1,27 @@
 const supabaseClient = window.supabaseClient;
 const statusMsg = document.getElementById("statusMsg");
 const errorMsg = document.getElementById("errorMsg");
-const form = document.getElementById("basic-info-form");
-const submitBtn = document.getElementById("basic-info-btn");
+const form = document.getElementById("basicInfoForm");
+const submitBtn = document.getElementById("basicInfoBtn");
 
 (async () => {
   const { data: { session } } = await supabaseClient.auth.getSession();
 
   if (!session) {
-    window.location.href = "./login.html";
+    window.location.replace("./login.html");
     return;
   }
 
   const verified = !!session.user.email_confirmed_at;
 
   const { data: profile } = await supabaseClient
-    .from("artist_profiles")
+    .from("profiles")
     .select("id")
-    .eq("user_id", session.user.id)
+    .eq("id", session.user.id)
     .maybeSingle();
 
   if (profile) {
-    window.location.href = "./profile-form.html";
+    window.location.replace("./profile-form.html");
     return;
   }
 
@@ -56,10 +56,12 @@ form.addEventListener("submit", async (e) => {
 
   const phone = `${countryCode}${phoneRaw}`;
 
-  const { error } = await supabaseClient.from("artist_profiles").insert({
-    user_id: session.user.id,
+  const { error } = await supabaseClient.from("profiles").insert({
+    id: session.user.id, //PK
     full_name: name,
-    phone: phone
+    email: session.user.email,
+    whatsapp_number: phone,   // role is set to default -> artist in the db
+    email_verified: !!session.user.email_confirmed_at
   });
 
   if (error) {
@@ -68,5 +70,5 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  window.location.href = "./profile-form.html";
+  window.location.replace("./profile-form.html");
 });

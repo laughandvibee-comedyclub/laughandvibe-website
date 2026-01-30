@@ -120,7 +120,8 @@
                         profile can be showcased on the Artist roster and your own profile page.
                     </p>
                     <!-- img -->
-                    <img src="../../assets/images/auth/login-signup.png" alt="mike-stand-stool-img">
+                    <img class="hidden md:block" src="../../assets/images/auth/login-signup.png"
+                        alt="mike-stand-stool-img">
                 </div>
 
                 <!-- signup form -->
@@ -139,7 +140,7 @@
                             Dancers</p>
                     </div>
                     <!-- form -->
-                    <form id="signup-form" class="w-full">
+                    <form id="signupForm" class="w-full">
                         <!-- form grid container -->
                         <div class="grid gap-6">
                             <!-- Email -->
@@ -170,31 +171,33 @@
                                     id="confirm-password" name="confirm-password" required />
                             </div>
                             <!-- policy-agreement checkbox -->
-                            <label class="text-[#878484] text-xs">
+                            <label class="text-[#878484] text-xs mb-6">
                                 <input type="checkbox" id="terms" name="terms" value="agreed" required>
                                 I agree to the basic artist guidelines and that my profile will be reviewed before
                                 publishing.
                             </label>
                         </div>
 
-                        <!-- error-msg -->
-                        <p id="errorMsg" class="error text-red-400 text-xs mt-6 py-4"></p>
-
                         <!-- Submit Button -->
                         <button type="submit"
                             class="bg-[#CCAE05] text-[#000000] font-medium px-5 py-1 rounded-md hover:text-white hover:bg-[#7D27CE] transition duration-200 inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80] cursor-pointer"
-                            id="signup-btn" name="signup-btn">
+                            id="signupBtn" name="signupBtn">
                             Create Account
                         </button>
                     </form>
 
                     <!-- login-page-link -->
-                    <div class="flex items-center gap-1 text-xs mt-6">
+                    <div class="flex flex-wrap items-center gap-1 text-xs mt-6 ml-0 mr-auto">
                         <p class="text-[#BEB9B9]">Already have an account?</p>
                         <a href="./login.html" class="text-[#7C31F4] hover:text-white">
                             Login
                         </a>
                     </div>
+
+                    <!-- error-msg -->
+                    <p id="errorMsg" class="error text-red-400 text-xs mt-6 py-4 ml-0 mr-auto"></p>
+                    <!-- success-msg -->
+                    <p id="successMsg" class="error text-emerald-300 text-xs mt-6 py-4 ml-0 mr-auto"></p>
                 </div>
             </div>
         </section>

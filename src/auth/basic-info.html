@@ -122,12 +122,8 @@
                             Dancers</p>
                     </div>
 
-                    <!-- error messages -->
-                    <p id="statusMsg" class="text-xs text-orange-300"></p>
-                    <p id="errorMsg" class="text-xs text-red-400"></p>
-
                     <!-- form -->
-                    <form id="basic-info-form" class="w-full" action="#" method="POST">
+                    <form id="basicInfoForm" class="w-full" action="#" method="POST">
                         <!-- form grid container -->
                         <div class="grid gap-6">
                             <!-- full name -->
@@ -153,7 +149,11 @@
                                     </select>
                                     <input type="tel" placeholder="98xxxxxxx10"
                                         class="w-full rounded-md placeholder:text-[#A59E9E] placeholder:text-xs px-4 py-1 focus:outline-none focus:ring-1 focus:ring-[#7D27CE] border-2 border-[#4B4545]"
-                                        id="phone" name="phone" required />
+                                        id="phone" name="phone" inputmode="numeric" maxlength="10" minlength="10"
+                                        aria-describedby="phoneHelp" required />
+                                    <p id="phoneHelp" class="sr-only">
+                                        Enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -161,10 +161,15 @@
                         <!-- Submit Button -->
                         <button type="submit"
                             class="bg-[#CCAE05] text-[#000000] font-medium px-5 py-1 mt-6 rounded-md hover:text-white hover:bg-[#7D27CE] transition duration-200 inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80] cursor-pointer"
-                            id="basic-info-btn" name="basic-info-btn">
+                            id="basicInfoBtn" name="basicInfoBtn">
                             Continue
                         </button>
                     </form>
+
+                    <!-- status messages -->
+                    <p id="statusMsg" class="text-xs text-orange-300 ml-0 mr-auto"></p>
+                    <!-- error messages -->
+                    <p id="errorMsg" class="text-xs text-red-400 ml-0 mr-auto"></p>
                 </div>
             </div>
         </section>
@@ -177,7 +182,7 @@
     </footer>
 
     <!-- js -->
-     <script src="./env.js"></script>
+    <script src="./env.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="./supabaseClient.js"></script>
     <script src="./basic-info.js" defer></script>

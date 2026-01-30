@@ -205,6 +205,17 @@
   }
 }
 @layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
   .absolute {
     position: absolute;
   }
@@ -250,9 +261,6 @@
   .my-9 {
     margin-block: calc(var(--spacing) * 9);
   }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -264,6 +272,9 @@
   }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
+  }
+  .mr-auto {
+    margin-right: auto;
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -279,6 +290,9 @@
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
+  }
+  .ml-0 {
+    margin-left: calc(var(--spacing) * 0);
   }
   .ml-7 {
     margin-left: calc(var(--spacing) * 7);
@@ -302,29 +316,9 @@
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
   }
-  .size-10 {
-    width: calc(var(--spacing) * 10);
-    height: calc(var(--spacing) * 10);
-  }
   .size-14 {
     width: calc(var(--spacing) * 14);
     height: calc(var(--spacing) * 14);
-  }
-  .size-\[50\%\] {
-    width: 50%;
-    height: 50%;
-  }
-  .size-\[75\%\] {
-    width: 75%;
-    height: 75%;
-  }
-  .size-dvh {
-    width: 100dvh;
-    height: 100dvh;
-  }
-  .size-svh {
-    width: 100svh;
-    height: 100svh;
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
@@ -353,20 +347,11 @@
   .h-full {
     height: 100%;
   }
-  .h-screen {
-    height: 100vh;
-  }
   .min-h-24 {
     min-height: calc(var(--spacing) * 24);
   }
   .min-h-dvh {
     min-height: 100dvh;
-  }
-  .min-h-full {
-    min-height: 100%;
-  }
-  .min-h-screen {
-    min-height: 100vh;
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
@@ -1200,9 +1185,6 @@
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
   }
-  .pr-1 {
-    padding-right: calc(var(--spacing) * 1);
-  }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -1435,9 +1417,6 @@
   }
   .text-emerald-300 {
     color: var(--color-emerald-300);
-  }
-  .text-emerald-400 {
-    color: var(--color-emerald-400);
   }
   .text-orange-300 {
     color: var(--color-orange-300);
