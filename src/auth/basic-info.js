@@ -59,6 +59,7 @@ form.addEventListener("submit", async (e) => {
   const { error } = await supabaseClient.from("profiles").insert({
     id: session.user.id, //PK
     full_name: name,
+    email: session.user.email,
     whatsapp_number: phone
   });
 
