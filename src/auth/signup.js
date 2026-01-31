@@ -64,7 +64,7 @@ form.addEventListener("submit", async (e) => {
     return resetSubmit();
   }
 
-  const { error } = await supabaseClient.auth.signUp({
+  const { data, error } = await supabaseClient.auth.signUp({
     email,
     password,
     options: {
@@ -74,21 +74,26 @@ form.addEventListener("submit", async (e) => {
 
   if (error) {
     // User already exists → force login
-    if (
-      error.message.toLowerCase().includes("already registered") ||
-      error.status === 422
-    ) {
-      window.location.replace("./login.html");
-      return;
-    }
-
     errorMsg.textContent = error.message;
     return resetSubmit();
   }
 
+  const user = data?.user;
+
+  // Already verified user
+  if (user?.email_confirmed_at) {
+    successMsg.textContent =
+      "This email is already verified. Please log in to continue.";
+    window.location.replace("./login.html");
+    return;
+  }
+
   successMsg.textContent =
-    "Account created. Please verify your email before continuing.";
+    "If an account exists for this email, a verification link has been sent. Please check your inbox.";
+
   form.reset();
+  signupBtn.disabled = true;
+  signupBtn.textContent = "Check your email";
 });
 
 // -------------------------
