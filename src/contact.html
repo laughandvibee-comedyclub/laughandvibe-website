@@ -7,6 +7,7 @@
     <title>Laugh and Vibe | Contact Us</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./contact-form.js" defer></script>
 </head>
 
 <body class="text-[#FFEFEF] font-poppins scroll-smooth">
@@ -68,7 +69,7 @@
                     <a href="../src/for-colleges.html">For Colleges</a>
                 </div>
                 <div class="w-full lg:w-fit py-4 text-center">
-                    <a href="https://lv-artist-page.netlify.app">Artists</a>
+                    <a href="./auth/artists.html">Artists</a>
                 </div>
                 <div class="w-full lg:w-fit py-4 text-center">
                     <a href="../index.html#inside-the-room">Gallery</a>
@@ -122,7 +123,7 @@
                         Share a few details and we’ll respond within 24 business hours.
                     </p>
                     <!-- form -->
-                    <form action="#" method="POST" class="w-full">
+                    <form id="contact-form" action="#" method="post" class="w-full">
                         <!-- form grid container -->
                         <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
                             <!-- Full Name -->
@@ -132,6 +133,7 @@
                                 </label>
                                 <input type="text" placeholder="Full Name"
                                     class="w-full col-span-1 rounded-lg placeholder:text-[#A59E9E] placeholder:text-xs px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-[#3B3A3A66] inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80]"
+                                    minlength="2" maxlength="100"
                                     id="fullname" name="fullname" required />
                             </div>
 
@@ -142,6 +144,7 @@
                                 </label>
                                 <input type="email" placeholder="you@example.com"
                                     class="w-full rounded-lg placeholder:text-[#A59E9E] placeholder:text-xs px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-[#3B3A3A66] inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80]"
+                                    maxlength="254"
                                     id="email" name="email" required />
                             </div>
 
@@ -152,7 +155,9 @@
                                 </label>
                                 <input type="tel" placeholder="+91"
                                     class="w-full rounded-lg placeholder:text-[#A59E9E] placeholder:text-xs px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-[#3B3A3A66] inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80]"
-                                    id="phone-no" name="phone-no" required />
+                                    id="phone-no" name="phone-no" 
+                                    inputmode="numeric" maxlength="10" minlength="10"
+                                    aria-describedby="phoneHelp" required />
                             </div>
 
                             <!-- Select Field -->
@@ -180,6 +185,7 @@
                                 <textarea rows="4"
                                     placeholder="Tell us about your show, date, audience size, and any special requirements."
                                     class="w-full rounded-lg placeholder:text-[#A59E9E] placeholder:text-xs px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-[#3B3A3A66] inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80]"
+                                    maxlength="1000"
                                     id="message" name="message"></textarea>
                             </div>
 
@@ -202,6 +208,9 @@
                                     class="w-full rounded-lg placeholder:text-[#A59E9E] placeholder:text-xs px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-[#3B3A3A66] inset-shadow-[1.44px_1.44px_1.44px_#716F6F40] shadow-[1.44px_1.44px_1.44px_#716F6F80]"
                                     id="budget" name="budget" />
                             </div>
+
+                            <!-- Honeypot field -->
+                            <input type="text" name="website" style="display:none">
 
                             <!-- Submit Button -->
                             <button type="submit"
